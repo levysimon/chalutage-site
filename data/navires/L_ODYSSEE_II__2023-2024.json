@@ -1,0 +1,156 @@
+[
+  {
+    "lat":42.91861,
+    "lon":3.5049266667,
+    "course":201.3999938965,
+    "speed":4.1999998093,
+    "timestamp":"2023-12-06T06:38:54.000Z",
+    "depth":-95.0,
+    "status":"pêche",
+    "event_id_unique":"L'ODYSSEE II_evt_1795",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.88428,
+    "lon":3.4862466667,
+    "course":200.6999969482,
+    "speed":3.9000000954,
+    "timestamp":"2023-12-06T07:09:13.000Z",
+    "depth":-95.0,
+    "status":"pêche",
+    "event_id_unique":"L'ODYSSEE II_evt_1795",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.8747233333,
+    "lon":3.4844616667,
+    "course":200.0,
+    "speed":0.8999999762,
+    "timestamp":"2023-12-06T07:34:25.000Z",
+    "depth":-94.0,
+    "status":"pêche",
+    "event_id_unique":"L'ODYSSEE II_evt_1795",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.8842766667,
+    "lon":3.4851033333,
+    "course":282.3999938965,
+    "speed":4.0999999046,
+    "timestamp":"2023-12-06T07:50:30.000Z",
+    "depth":-95.0,
+    "status":"pêche",
+    "event_id_unique":"L'ODYSSEE II_evt_1795",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.88117,
+    "lon":3.4812466667,
+    "course":211.5,
+    "speed":4.6999998093,
+    "timestamp":"2023-12-06T07:54:32.000Z",
+    "depth":-95.0,
+    "status":"pêche",
+    "event_id_unique":"L'ODYSSEE II_evt_1795",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.8726433333,
+    "lon":3.4762216667,
+    "course":198.8000030518,
+    "speed":5.8000001907,
+    "timestamp":"2023-12-06T08:00:40.000Z",
+    "depth":-94.0,
+    "status":"pêche",
+    "event_id_unique":"L'ODYSSEE II_evt_1795",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.8627866667,
+    "lon":3.4744616667,
+    "course":181.8000030518,
+    "speed":3.7999999523,
+    "timestamp":"2023-12-06T08:09:33.000Z",
+    "depth":-95.0,
+    "status":"pêche",
+    "event_id_unique":"L'ODYSSEE II_evt_1795",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.8510766667,
+    "lon":3.4754533333,
+    "course":178.6999969482,
+    "speed":3.9000000954,
+    "timestamp":"2023-12-06T08:20:11.000Z",
+    "depth":-95.0,
+    "status":"pêche",
+    "event_id_unique":"L'ODYSSEE II_evt_1795",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.8420033333,
+    "lon":3.4764216667,
+    "course":190.3000030518,
+    "speed":0.6999999881,
+    "timestamp":"2023-12-06T08:39:36.000Z",
+    "depth":-95.0,
+    "status":"pêche",
+    "event_id_unique":"L'ODYSSEE II_evt_1795",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.8805633333,
+    "lon":3.4056633333,
+    "course":13.1000003815,
+    "speed":3.9000000954,
+    "timestamp":"2023-12-06T09:24:01.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"L'ODYSSEE II_evt_1795",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.9006133333,
+    "lon":3.4154133333,
+    "course":65.5,
+    "speed":0.8000000119,
+    "timestamp":"2023-12-06T09:43:33.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"L'ODYSSEE II_evt_1795",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.9009666667,
+    "lon":3.4171866667,
+    "course":65.6999969482,
+    "speed":2.5,
+    "timestamp":"2023-12-06T09:48:40.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"L'ODYSSEE II_evt_1795",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.9012783333,
+    "lon":3.418385,
+    "course":121.6999969482,
+    "speed":0.8999999762,
+    "timestamp":"2023-12-06T09:50:51.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"L'ODYSSEE II_evt_1795",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.90261,
+    "lon":3.4180466667,
+    "course":308.1000061035,
+    "speed":7.4000000954,
+    "timestamp":"2023-12-06T10:06:15.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"L'ODYSSEE II_evt_1795",
+    "zone_detection":"OUEST"
+  }
+]

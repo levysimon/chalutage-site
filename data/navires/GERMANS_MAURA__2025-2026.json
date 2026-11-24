@@ -1,0 +1,222 @@
+[
+  {
+    "lat":42.3848366667,
+    "lon":3.25464,
+    "course":168.0,
+    "speed":3.0,
+    "timestamp":"2026-02-03T22:00:06.000Z",
+    "depth":-95.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1345",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.39943,
+    "lon":3.2506266667,
+    "course":172.0,
+    "speed":3.0,
+    "timestamp":"2026-02-04T00:47:08.000Z",
+    "depth":-96.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1345",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.43172,
+    "lon":3.2345316667,
+    "course":170.3000030518,
+    "speed":3.2999999523,
+    "timestamp":"2026-02-04T05:35:21.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1345",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.4203933333,
+    "lon":3.2379533333,
+    "course":162.8999938965,
+    "speed":3.2000000477,
+    "timestamp":"2026-02-04T05:46:02.000Z",
+    "depth":-94.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1345",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.3808266667,
+    "lon":3.2512216667,
+    "course":179.0,
+    "speed":3.0999999046,
+    "timestamp":"2026-02-04T06:31:00.000Z",
+    "depth":-95.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1345",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.4303683333,
+    "lon":3.2383783333,
+    "course":130.3000030518,
+    "speed":3.2999999523,
+    "timestamp":"2026-02-04T07:59:32.000Z",
+    "depth":-94.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1345",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.42155,
+    "lon":3.2316766667,
+    "course":127.0,
+    "speed":3.2000000477,
+    "timestamp":"2026-02-04T12:12:20.000Z",
+    "depth":-93.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1345",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.404505,
+    "lon":3.2416716667,
+    "course":170.0,
+    "speed":3.0,
+    "timestamp":"2026-02-04T12:33:19.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1345",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.37912,
+    "lon":3.24678,
+    "course":172.0,
+    "speed":2.9000000954,
+    "timestamp":"2026-02-04T13:02:39.000Z",
+    "depth":-95.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1345",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.42932,
+    "lon":3.2240333333,
+    "course":38.9000015259,
+    "speed":3.2999999523,
+    "timestamp":"2026-04-20T06:20:00.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1357",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.4327416667,
+    "lon":3.2366183333,
+    "course":92.0,
+    "speed":3.4000000954,
+    "timestamp":"2026-04-20T06:30:16.000Z",
+    "depth":-94.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1357",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.4289766667,
+    "lon":3.24979,
+    "course":136.0,
+    "speed":3.4000000954,
+    "timestamp":"2026-04-20T06:40:30.000Z",
+    "depth":-97.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1357",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.4285866667,
+    "lon":3.23836,
+    "course":125.5,
+    "speed":3.5999999046,
+    "timestamp":"2026-04-20T11:24:04.000Z",
+    "depth":-94.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1357",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.4207633333,
+    "lon":3.2462516667,
+    "course":163.6000061035,
+    "speed":3.5999999046,
+    "timestamp":"2026-04-20T11:34:05.000Z",
+    "depth":-97.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1357",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.4111483333,
+    "lon":3.2489683333,
+    "course":172.0,
+    "speed":3.5,
+    "timestamp":"2026-04-20T11:44:04.000Z",
+    "depth":-97.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1357",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.386405,
+    "lon":3.2536316667,
+    "course":169.8000030518,
+    "speed":3.5,
+    "timestamp":"2026-04-20T12:15:11.000Z",
+    "depth":-95.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1357",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.4304333333,
+    "lon":3.2286166667,
+    "course":86.1999969482,
+    "speed":3.4000000954,
+    "timestamp":"2026-04-20T15:08:52.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1357",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.4271883333,
+    "lon":3.2407883333,
+    "course":139.8000030518,
+    "speed":3.5999999046,
+    "timestamp":"2026-04-20T16:14:54.000Z",
+    "depth":-94.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1357",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.41918,
+    "lon":3.24679,
+    "course":163.3999938965,
+    "speed":3.5,
+    "timestamp":"2026-04-20T16:46:04.000Z",
+    "depth":-97.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1357",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.409875,
+    "lon":3.2492233333,
+    "course":168.6000061035,
+    "speed":3.4000000954,
+    "timestamp":"2026-04-20T17:12:19.000Z",
+    "depth":-97.0,
+    "status":"pêche",
+    "event_id_unique":"GERMANS MAURA_evt_1357",
+    "zone_detection":"OUEST"
+  }
+]

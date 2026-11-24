@@ -1,0 +1,211 @@
+[
+  {
+    "lat":43.209945,
+    "lon":4.1217533333,
+    "course":3.2999999523,
+    "speed":0.8000000119,
+    "timestamp":"2024-10-24T05:18:44.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2296",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2094616667,
+    "lon":4.11818,
+    "course":105.1999969482,
+    "speed":2.7999999523,
+    "timestamp":"2024-10-24T05:31:36.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2296",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2090683333,
+    "lon":4.1195766667,
+    "course":111.3000030518,
+    "speed":3.0999999046,
+    "timestamp":"2024-10-24T05:32:52.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2296",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2174583333,
+    "lon":4.1110916667,
+    "course":310.5,
+    "speed":6.0999999046,
+    "timestamp":"2024-10-24T05:47:34.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2296",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2230616667,
+    "lon":4.1008433333,
+    "course":300.299987793,
+    "speed":4.1999998093,
+    "timestamp":"2024-10-24T05:53:34.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2296",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2312016667,
+    "lon":4.079345,
+    "course":294.5,
+    "speed":4.4000000954,
+    "timestamp":"2024-10-24T06:08:03.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2296",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2456566667,
+    "lon":4.0279233333,
+    "course":286.700012207,
+    "speed":4.4000000954,
+    "timestamp":"2024-10-24T06:40:56.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2296",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2497766667,
+    "lon":4.003115,
+    "course":281.5,
+    "speed":4.4000000954,
+    "timestamp":"2024-10-24T06:56:07.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2296",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.255845,
+    "lon":3.9532833333,
+    "course":286.200012207,
+    "speed":4.4000000954,
+    "timestamp":"2024-10-24T07:29:30.000Z",
+    "depth":-90.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2296",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.123175,
+    "lon":3.6947333333,
+    "course":42.9000015259,
+    "speed":4.1999998093,
+    "timestamp":"2024-10-30T09:05:36.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2300",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.1406283333,
+    "lon":3.71902,
+    "course":45.0999984741,
+    "speed":4.1999998093,
+    "timestamp":"2024-10-30T09:26:50.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2300",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.1630983333,
+    "lon":3.7382833333,
+    "course":37.5,
+    "speed":4.1999998093,
+    "timestamp":"2024-10-30T09:49:36.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2300",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.1713416667,
+    "lon":3.7474333333,
+    "course":51.7999992371,
+    "speed":4.0999999046,
+    "timestamp":"2024-10-30T09:58:39.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2300",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2002,
+    "lon":3.78406,
+    "course":45.0,
+    "speed":4.3000001907,
+    "timestamp":"2024-10-30T10:32:19.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2300",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2099066667,
+    "lon":3.8015866667,
+    "course":58.9000015259,
+    "speed":4.1999998093,
+    "timestamp":"2024-10-30T10:45:49.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2300",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2137933333,
+    "lon":3.813365,
+    "course":72.4000015259,
+    "speed":4.1999998093,
+    "timestamp":"2024-10-30T10:53:49.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2300",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2154166667,
+    "lon":3.8255283333,
+    "course":110.0999984741,
+    "speed":1.1000000238,
+    "timestamp":"2024-10-30T11:01:58.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2300",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2114283333,
+    "lon":3.8328816667,
+    "course":87.1999969482,
+    "speed":3.5,
+    "timestamp":"2024-10-30T11:23:19.000Z",
+    "depth":-93.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2300",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2115883333,
+    "lon":3.8351266667,
+    "course":85.9000015259,
+    "speed":3.0999999046,
+    "timestamp":"2024-10-30T11:25:09.000Z",
+    "depth":-93.0,
+    "status":"pêche",
+    "event_id_unique":"CHARLES GILBERTE II_evt_2300",
+    "zone_detection":"OUEST"
+  }
+]

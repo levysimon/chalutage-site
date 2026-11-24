@@ -1,0 +1,211 @@
+[
+  {
+    "lat":42.753405,
+    "lon":3.3533366667,
+    "course":182.3999938965,
+    "speed":4.0999999046,
+    "timestamp":"2025-01-30T04:52:13.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.7074216667,
+    "lon":3.30382,
+    "course":214.8999938965,
+    "speed":4.0999999046,
+    "timestamp":"2025-01-30T05:43:01.000Z",
+    "depth":-90.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.6903533333,
+    "lon":3.2886033333,
+    "course":213.3999938965,
+    "speed":4.1999998093,
+    "timestamp":"2025-01-30T06:00:43.000Z",
+    "depth":-90.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.66115,
+    "lon":3.2853683333,
+    "course":175.8999938965,
+    "speed":4.1999998093,
+    "timestamp":"2025-01-30T06:25:51.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.64041,
+    "lon":3.2868483333,
+    "course":174.8999938965,
+    "speed":4.1999998093,
+    "timestamp":"2025-01-30T06:43:25.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.6305733333,
+    "lon":3.2896866667,
+    "course":170.6000061035,
+    "speed":4.4000000954,
+    "timestamp":"2025-01-30T06:51:55.000Z",
+    "depth":-90.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.619315,
+    "lon":3.29132,
+    "course":176.1000061035,
+    "speed":4.3000001907,
+    "timestamp":"2025-01-30T07:01:26.000Z",
+    "depth":-90.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.614585,
+    "lon":3.3019616667,
+    "course":70.0,
+    "speed":2.4000000954,
+    "timestamp":"2025-01-30T07:22:16.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.6227316667,
+    "lon":3.296385,
+    "course":314.1000061035,
+    "speed":3.5999999046,
+    "timestamp":"2025-01-30T07:37:06.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.63183,
+    "lon":3.29466,
+    "course":327.0,
+    "speed":1.3999999762,
+    "timestamp":"2025-01-30T08:10:34.000Z",
+    "depth":-90.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.6388716667,
+    "lon":3.2886216667,
+    "course":353.6000061035,
+    "speed":5.4000000954,
+    "timestamp":"2025-01-30T08:30:00.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.640265,
+    "lon":3.28842,
+    "course":354.799987793,
+    "speed":3.2999999523,
+    "timestamp":"2025-01-30T08:31:14.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.6557966667,
+    "lon":3.2861316667,
+    "course":353.700012207,
+    "speed":4.5999999046,
+    "timestamp":"2025-01-30T08:45:34.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.695315,
+    "lon":3.2884033333,
+    "course":34.0,
+    "speed":4.6999998093,
+    "timestamp":"2025-01-30T09:19:42.000Z",
+    "depth":-90.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.7058866667,
+    "lon":3.2995666667,
+    "course":38.7000007629,
+    "speed":4.4000000954,
+    "timestamp":"2025-01-30T09:30:32.000Z",
+    "depth":-90.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.730615,
+    "lon":3.3422066667,
+    "course":54.0,
+    "speed":4.1999998093,
+    "timestamp":"2025-01-30T10:04:24.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.7383316667,
+    "lon":3.3495266667,
+    "course":17.7000007629,
+    "speed":4.1999998093,
+    "timestamp":"2025-01-30T10:12:34.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.7473,
+    "lon":3.3529683333,
+    "course":10.1000003815,
+    "speed":4.1999998093,
+    "timestamp":"2025-01-30T10:20:32.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.7581066667,
+    "lon":3.356495,
+    "course":12.6999998093,
+    "speed":4.0999999046,
+    "timestamp":"2025-01-30T10:30:15.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"L'OISEAU DES ILES II_evt_2569",
+    "zone_detection":"OUEST"
+  }
+]

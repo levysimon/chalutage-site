@@ -1,0 +1,1543 @@
+{
+  "genere_le": "2026-09-22T18:12:51.366964+00:00",
+  "nb_navires": 34,
+  "nb_saisons": 13,
+  "nb_points_total": 7333,
+  "nb_evenements_infraction_confirmee": 603,
+  "seuils_infraction": {
+    "nb_pings_min": 3,
+    "duree_h_min": 2.0
+  },
+  "fichiers": [
+    {
+      "bateau": "AARON",
+      "saison": "2021-2022",
+      "fichier": "par_navire_saison/AARON__2021-2022.json",
+      "nb_points": 12,
+      "nb_points_en_zone": 12,
+      "nb_points_infraction_confirmee": 12,
+      "nb_evenements": 1,
+      "date_debut": "2022-01-17T06:48:01+00:00",
+      "date_fin": "2022-01-17T09:05:00+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "BELLE ILE II",
+      "saison": "2019-2020",
+      "fichier": "par_navire_saison/BELLE_ILE_II__2019-2020.json",
+      "nb_points": 23,
+      "nb_points_en_zone": 23,
+      "nb_points_infraction_confirmee": 23,
+      "nb_evenements": 4,
+      "date_debut": "2020-01-08T06:46:21+00:00",
+      "date_fin": "2020-04-08T07:17:29+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "CHARLES GILBERTE II",
+      "saison": "2019-2020",
+      "fichier": "par_navire_saison/CHARLES_GILBERTE_II__2019-2020.json",
+      "nb_points": 12,
+      "nb_points_en_zone": 12,
+      "nb_points_infraction_confirmee": 12,
+      "nb_evenements": 2,
+      "date_debut": "2020-04-08T06:09:26+00:00",
+      "date_fin": "2020-04-27T08:14:04+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "CHARLES GILBERTE II",
+      "saison": "2021-2022",
+      "fichier": "par_navire_saison/CHARLES_GILBERTE_II__2021-2022.json",
+      "nb_points": 60,
+      "nb_points_en_zone": 60,
+      "nb_points_infraction_confirmee": 60,
+      "nb_evenements": 6,
+      "date_debut": "2021-11-08T11:28:29+00:00",
+      "date_fin": "2022-03-04T09:16:43+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "CHARLES GILBERTE II",
+      "saison": "2022-2023",
+      "fichier": "par_navire_saison/CHARLES_GILBERTE_II__2022-2023.json",
+      "nb_points": 25,
+      "nb_points_en_zone": 25,
+      "nb_points_infraction_confirmee": 25,
+      "nb_evenements": 3,
+      "date_debut": "2022-12-05T03:05:48+00:00",
+      "date_fin": "2023-01-25T12:23:24+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "CHARLES GILBERTE II",
+      "saison": "2023-2024",
+      "fichier": "par_navire_saison/CHARLES_GILBERTE_II__2023-2024.json",
+      "nb_points": 28,
+      "nb_points_en_zone": 28,
+      "nb_points_infraction_confirmee": 28,
+      "nb_evenements": 3,
+      "date_debut": "2023-11-23T04:18:44+00:00",
+      "date_fin": "2024-04-19T11:46:44+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "CHARLES GILBERTE II",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/CHARLES_GILBERTE_II__2024-2025.json",
+      "nb_points": 38,
+      "nb_points_en_zone": 38,
+      "nb_points_infraction_confirmee": 38,
+      "nb_evenements": 3,
+      "date_debut": "2025-04-04T07:03:10+00:00",
+      "date_fin": "2025-04-16T12:33:02+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "CHARLES GILBERTE II",
+      "saison": "2025-2026",
+      "fichier": "par_navire_saison/CHARLES_GILBERTE_II__2025-2026.json",
+      "nb_points": 29,
+      "nb_points_en_zone": 29,
+      "nb_points_infraction_confirmee": 29,
+      "nb_evenements": 1,
+      "date_debut": "2026-01-09T03:41:18+00:00",
+      "date_fin": "2026-01-09T13:13:31+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "CHARLES GILBERTE II",
+      "saison": "hors-fermeture-2024",
+      "fichier": "par_navire_saison/CHARLES_GILBERTE_II__hors-fermeture-2024.json",
+      "nb_points": 19,
+      "nb_points_en_zone": 19,
+      "nb_points_infraction_confirmee": 19,
+      "nb_evenements": 2,
+      "date_debut": "2024-10-24T05:18:44+00:00",
+      "date_fin": "2024-10-30T11:25:09+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "CHARLES GILBERTE II",
+      "saison": "hors-fermeture-2025",
+      "fichier": "par_navire_saison/CHARLES_GILBERTE_II__hors-fermeture-2025.json",
+      "nb_points": 6,
+      "nb_points_en_zone": 6,
+      "nb_points_infraction_confirmee": 6,
+      "nb_evenements": 1,
+      "date_debut": "2025-10-07T02:18:33+00:00",
+      "date_fin": "2025-10-07T06:53:31+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "CHRISTIANE ROGER",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/CHRISTIANE_ROGER__2024-2025.json",
+      "nb_points": 88,
+      "nb_points_en_zone": 88,
+      "nb_points_infraction_confirmee": 88,
+      "nb_evenements": 8,
+      "date_debut": "2025-01-14T05:46:46+00:00",
+      "date_fin": "2025-03-18T06:49:23+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "CHRISTIANE ROGER",
+      "saison": "2025-2026",
+      "fichier": "par_navire_saison/CHRISTIANE_ROGER__2025-2026.json",
+      "nb_points": 41,
+      "nb_points_en_zone": 41,
+      "nb_points_infraction_confirmee": 41,
+      "nb_evenements": 4,
+      "date_debut": "2025-12-01T06:10:01+00:00",
+      "date_fin": "2025-12-08T10:23:13+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "COSTA MEDITERRANIA",
+      "saison": "2019-2020",
+      "fichier": "par_navire_saison/COSTA_MEDITERRANIA__2019-2020.json",
+      "nb_points": 11,
+      "nb_points_en_zone": 11,
+      "nb_points_infraction_confirmee": 11,
+      "nb_evenements": 2,
+      "date_debut": "2020-01-07T11:10:31+00:00",
+      "date_fin": "2020-03-13T14:12:14+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "DANIELE-MARIE",
+      "saison": "2023-2024",
+      "fichier": "par_navire_saison/DANIELE-MARIE__2023-2024.json",
+      "nb_points": 19,
+      "nb_points_en_zone": 19,
+      "nb_points_infraction_confirmee": 19,
+      "nb_evenements": 2,
+      "date_debut": "2024-04-04T05:00:07+00:00",
+      "date_fin": "2024-04-14T07:43:40+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "DON BORJA",
+      "saison": "2021-2022",
+      "fichier": "par_navire_saison/DON_BORJA__2021-2022.json",
+      "nb_points": 17,
+      "nb_points_en_zone": 17,
+      "nb_points_infraction_confirmee": 17,
+      "nb_evenements": 3,
+      "date_debut": "2022-01-19T02:22:32+00:00",
+      "date_fin": "2022-04-06T13:13:20+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "DON BORJA",
+      "saison": "hors-fermeture-2021",
+      "fichier": "par_navire_saison/DON_BORJA__hors-fermeture-2021.json",
+      "nb_points": 3,
+      "nb_points_en_zone": 3,
+      "nb_points_infraction_confirmee": 3,
+      "nb_evenements": 1,
+      "date_debut": "2021-09-02T09:00:06+00:00",
+      "date_fin": "2021-09-02T12:50:23+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "ELI HERMI II",
+      "saison": "2019-2020",
+      "fichier": "par_navire_saison/ELI_HERMI_II__2019-2020.json",
+      "nb_points": 34,
+      "nb_points_en_zone": 34,
+      "nb_points_infraction_confirmee": 34,
+      "nb_evenements": 6,
+      "date_debut": "2020-01-07T08:03:15+00:00",
+      "date_fin": "2020-04-29T10:05:26+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "ERCOLE-LUCIE",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/ERCOLE-LUCIE__2024-2025.json",
+      "nb_points": 23,
+      "nb_points_en_zone": 23,
+      "nb_points_infraction_confirmee": 23,
+      "nb_evenements": 3,
+      "date_debut": "2024-11-05T04:15:05+00:00",
+      "date_fin": "2025-04-04T06:08:09+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "GERMANS MAURA",
+      "saison": "2019-2020",
+      "fichier": "par_navire_saison/GERMANS_MAURA__2019-2020.json",
+      "nb_points": 9,
+      "nb_points_en_zone": 9,
+      "nb_points_infraction_confirmee": 9,
+      "nb_evenements": 2,
+      "date_debut": "2020-01-03T07:24:33+00:00",
+      "date_fin": "2020-01-09T11:17:18+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "GERMANS MAURA",
+      "saison": "2025-2026",
+      "fichier": "par_navire_saison/GERMANS_MAURA__2025-2026.json",
+      "nb_points": 20,
+      "nb_points_en_zone": 20,
+      "nb_points_infraction_confirmee": 20,
+      "nb_evenements": 2,
+      "date_debut": "2026-02-03T22:00:06+00:00",
+      "date_fin": "2026-04-20T17:12:19+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "GIOVANNI JEAN 2",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/GIOVANNI_JEAN_2__2024-2025.json",
+      "nb_points": 60,
+      "nb_points_en_zone": 60,
+      "nb_points_infraction_confirmee": 60,
+      "nb_evenements": 3,
+      "date_debut": "2025-01-29T09:51:39+00:00",
+      "date_fin": "2025-04-03T07:47:52+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "GIOVANNI JEAN 2",
+      "saison": "2025-2026",
+      "fichier": "par_navire_saison/GIOVANNI_JEAN_2__2025-2026.json",
+      "nb_points": 239,
+      "nb_points_en_zone": 239,
+      "nb_points_infraction_confirmee": 239,
+      "nb_evenements": 13,
+      "date_debut": "2025-11-17T11:02:41+00:00",
+      "date_fin": "2026-03-24T14:38:56+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "GIOVANNI JEAN 2",
+      "saison": "hors-fermeture-2025",
+      "fichier": "par_navire_saison/GIOVANNI_JEAN_2__hors-fermeture-2025.json",
+      "nb_points": 41,
+      "nb_points_en_zone": 41,
+      "nb_points_infraction_confirmee": 41,
+      "nb_evenements": 3,
+      "date_debut": "2025-10-20T06:44:51+00:00",
+      "date_fin": "2025-10-28T08:34:07+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "GIOVANNI-JEAN",
+      "saison": "2019-2020",
+      "fichier": "par_navire_saison/GIOVANNI-JEAN__2019-2020.json",
+      "nb_points": 30,
+      "nb_points_en_zone": 30,
+      "nb_points_infraction_confirmee": 30,
+      "nb_evenements": 4,
+      "date_debut": "2020-01-15T10:47:27+00:00",
+      "date_fin": "2020-04-28T11:15:30+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "GIOVANNI-JEAN",
+      "saison": "2020-2021",
+      "fichier": "par_navire_saison/GIOVANNI-JEAN__2020-2021.json",
+      "nb_points": 56,
+      "nb_points_en_zone": 56,
+      "nb_points_infraction_confirmee": 56,
+      "nb_evenements": 6,
+      "date_debut": "2020-12-03T06:39:53+00:00",
+      "date_fin": "2021-03-08T13:30:45+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "GIOVANNI-JEAN",
+      "saison": "2021-2022",
+      "fichier": "par_navire_saison/GIOVANNI-JEAN__2021-2022.json",
+      "nb_points": 70,
+      "nb_points_en_zone": 70,
+      "nb_points_infraction_confirmee": 70,
+      "nb_evenements": 7,
+      "date_debut": "2021-12-06T07:39:20+00:00",
+      "date_fin": "2022-03-10T09:06:24+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "GIOVANNI-JEAN",
+      "saison": "2022-2023",
+      "fichier": "par_navire_saison/GIOVANNI-JEAN__2022-2023.json",
+      "nb_points": 21,
+      "nb_points_en_zone": 21,
+      "nb_points_infraction_confirmee": 21,
+      "nb_evenements": 2,
+      "date_debut": "2023-01-05T07:42:15+00:00",
+      "date_fin": "2023-01-06T10:58:55+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "GIOVANNI-JEAN",
+      "saison": "2023-2024",
+      "fichier": "par_navire_saison/GIOVANNI-JEAN__2023-2024.json",
+      "nb_points": 350,
+      "nb_points_en_zone": 350,
+      "nb_points_infraction_confirmee": 350,
+      "nb_evenements": 19,
+      "date_debut": "2023-11-29T07:30:25+00:00",
+      "date_fin": "2024-04-25T08:52:38+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "GIOVANNI-JEAN",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/GIOVANNI-JEAN__2024-2025.json",
+      "nb_points": 424,
+      "nb_points_en_zone": 424,
+      "nb_points_infraction_confirmee": 424,
+      "nb_evenements": 19,
+      "date_debut": "2024-11-12T07:16:20+00:00",
+      "date_fin": "2025-04-01T10:11:50+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "GIOVANNI-JEAN",
+      "saison": "2025-2026",
+      "fichier": "par_navire_saison/GIOVANNI-JEAN__2025-2026.json",
+      "nb_points": 262,
+      "nb_points_en_zone": 262,
+      "nb_points_infraction_confirmee": 262,
+      "nb_evenements": 14,
+      "date_debut": "2025-11-04T07:09:09+00:00",
+      "date_fin": "2026-01-26T15:50:43+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "GIOVANNI-JEAN",
+      "saison": "hors-fermeture-2023",
+      "fichier": "par_navire_saison/GIOVANNI-JEAN__hors-fermeture-2023.json",
+      "nb_points": 58,
+      "nb_points_en_zone": 58,
+      "nb_points_infraction_confirmee": 58,
+      "nb_evenements": 3,
+      "date_debut": "2023-09-01T05:14:47+00:00",
+      "date_fin": "2023-10-19T11:41:05+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "GIOVANNI-JEAN",
+      "saison": "hors-fermeture-2024",
+      "fichier": "par_navire_saison/GIOVANNI-JEAN__hors-fermeture-2024.json",
+      "nb_points": 26,
+      "nb_points_en_zone": 26,
+      "nb_points_infraction_confirmee": 26,
+      "nb_evenements": 2,
+      "date_debut": "2024-10-16T06:20:02+00:00",
+      "date_fin": "2024-10-29T08:16:43+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "J.GARRIGA",
+      "saison": "2019-2020",
+      "fichier": "par_navire_saison/J_GARRIGA__2019-2020.json",
+      "nb_points": 6,
+      "nb_points_en_zone": 6,
+      "nb_points_infraction_confirmee": 6,
+      "nb_evenements": 1,
+      "date_debut": "2020-01-10T06:38:14+00:00",
+      "date_fin": "2020-01-10T14:06:04+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "JEAN LOUIS VINCENT",
+      "saison": "2019-2020",
+      "fichier": "par_navire_saison/JEAN_LOUIS_VINCENT__2019-2020.json",
+      "nb_points": 6,
+      "nb_points_en_zone": 6,
+      "nb_points_infraction_confirmee": 6,
+      "nb_evenements": 1,
+      "date_debut": "2020-04-09T12:06:54+00:00",
+      "date_fin": "2020-04-09T14:16:53+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "JEAN LOUIS VINCENT",
+      "saison": "2021-2022",
+      "fichier": "par_navire_saison/JEAN_LOUIS_VINCENT__2021-2022.json",
+      "nb_points": 7,
+      "nb_points_en_zone": 7,
+      "nb_points_infraction_confirmee": 7,
+      "nb_evenements": 1,
+      "date_debut": "2021-12-29T08:01:05+00:00",
+      "date_fin": "2021-12-29T10:42:15+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "JEAN LOUIS VINCENT",
+      "saison": "2022-2023",
+      "fichier": "par_navire_saison/JEAN_LOUIS_VINCENT__2022-2023.json",
+      "nb_points": 6,
+      "nb_points_en_zone": 6,
+      "nb_points_infraction_confirmee": 6,
+      "nb_evenements": 1,
+      "date_debut": "2023-02-13T11:42:53+00:00",
+      "date_fin": "2023-02-13T14:55:13+00:00",
+      "zones_rencontrees": [
+        "EST"
+      ]
+    },
+    {
+      "bateau": "JEAN LOUIS VINCENT",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/JEAN_LOUIS_VINCENT__2024-2025.json",
+      "nb_points": 35,
+      "nb_points_en_zone": 35,
+      "nb_points_infraction_confirmee": 35,
+      "nb_evenements": 4,
+      "date_debut": "2025-03-14T08:10:03+00:00",
+      "date_fin": "2025-04-24T06:17:02+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "JULIARTH II",
+      "saison": "2019-2020",
+      "fichier": "par_navire_saison/JULIARTH_II__2019-2020.json",
+      "nb_points": 6,
+      "nb_points_en_zone": 6,
+      "nb_points_infraction_confirmee": 6,
+      "nb_evenements": 1,
+      "date_debut": "2020-04-07T06:09:16+00:00",
+      "date_fin": "2020-04-07T08:28:47+00:00",
+      "zones_rencontrees": [
+        "EST"
+      ]
+    },
+    {
+      "bateau": "JULIARTH II",
+      "saison": "2021-2022",
+      "fichier": "par_navire_saison/JULIARTH_II__2021-2022.json",
+      "nb_points": 102,
+      "nb_points_en_zone": 102,
+      "nb_points_infraction_confirmee": 102,
+      "nb_evenements": 10,
+      "date_debut": "2022-01-20T06:21:33+00:00",
+      "date_fin": "2022-04-29T07:53:48+00:00",
+      "zones_rencontrees": [
+        "EST"
+      ]
+    },
+    {
+      "bateau": "JULIARTH II",
+      "saison": "2023-2024",
+      "fichier": "par_navire_saison/JULIARTH_II__2023-2024.json",
+      "nb_points": 12,
+      "nb_points_en_zone": 12,
+      "nb_points_infraction_confirmee": 12,
+      "nb_evenements": 1,
+      "date_debut": "2023-11-16T06:14:33+00:00",
+      "date_fin": "2023-11-16T11:34:00+00:00",
+      "zones_rencontrees": [
+        "EST"
+      ]
+    },
+    {
+      "bateau": "JULIARTH II",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/JULIARTH_II__2024-2025.json",
+      "nb_points": 533,
+      "nb_points_en_zone": 533,
+      "nb_points_infraction_confirmee": 533,
+      "nb_evenements": 35,
+      "date_debut": "2025-01-07T04:25:06+00:00",
+      "date_fin": "2025-04-28T09:02:29+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "JULIARTH II",
+      "saison": "2025-2026",
+      "fichier": "par_navire_saison/JULIARTH_II__2025-2026.json",
+      "nb_points": 151,
+      "nb_points_en_zone": 151,
+      "nb_points_infraction_confirmee": 151,
+      "nb_evenements": 11,
+      "date_debut": "2026-03-05T07:17:07+00:00",
+      "date_fin": "2026-04-27T08:34:05+00:00",
+      "zones_rencontrees": [
+        "EST"
+      ]
+    },
+    {
+      "bateau": "KELIA MAELLE",
+      "saison": "2025-2026",
+      "fichier": "par_navire_saison/KELIA_MAELLE__2025-2026.json",
+      "nb_points": 47,
+      "nb_points_en_zone": 47,
+      "nb_points_infraction_confirmee": 47,
+      "nb_evenements": 4,
+      "date_debut": "2025-12-02T09:44:41+00:00",
+      "date_fin": "2025-12-09T09:43:22+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "L'ODYSSEE II",
+      "saison": "2019-2020",
+      "fichier": "par_navire_saison/L_ODYSSEE_II__2019-2020.json",
+      "nb_points": 7,
+      "nb_points_en_zone": 7,
+      "nb_points_infraction_confirmee": 7,
+      "nb_evenements": 1,
+      "date_debut": "2020-04-08T02:45:27+00:00",
+      "date_fin": "2020-04-08T05:31:36+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "L'ODYSSEE II",
+      "saison": "2021-2022",
+      "fichier": "par_navire_saison/L_ODYSSEE_II__2021-2022.json",
+      "nb_points": 53,
+      "nb_points_en_zone": 53,
+      "nb_points_infraction_confirmee": 53,
+      "nb_evenements": 5,
+      "date_debut": "2021-11-08T10:41:20+00:00",
+      "date_fin": "2022-03-30T11:45:02+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "L'ODYSSEE II",
+      "saison": "2022-2023",
+      "fichier": "par_navire_saison/L_ODYSSEE_II__2022-2023.json",
+      "nb_points": 41,
+      "nb_points_en_zone": 41,
+      "nb_points_infraction_confirmee": 41,
+      "nb_evenements": 6,
+      "date_debut": "2022-11-14T05:46:47+00:00",
+      "date_fin": "2023-04-24T12:33:38+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "L'ODYSSEE II",
+      "saison": "2023-2024",
+      "fichier": "par_navire_saison/L_ODYSSEE_II__2023-2024.json",
+      "nb_points": 14,
+      "nb_points_en_zone": 14,
+      "nb_points_infraction_confirmee": 14,
+      "nb_evenements": 1,
+      "date_debut": "2023-12-06T06:38:54+00:00",
+      "date_fin": "2023-12-06T10:06:15+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "L'ODYSSEE II",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/L_ODYSSEE_II__2024-2025.json",
+      "nb_points": 121,
+      "nb_points_en_zone": 121,
+      "nb_points_infraction_confirmee": 121,
+      "nb_evenements": 7,
+      "date_debut": "2024-11-12T03:25:14+00:00",
+      "date_fin": "2025-04-24T11:00:38+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "L'ODYSSEE II",
+      "saison": "2025-2026",
+      "fichier": "par_navire_saison/L_ODYSSEE_II__2025-2026.json",
+      "nb_points": 90,
+      "nb_points_en_zone": 90,
+      "nb_points_infraction_confirmee": 90,
+      "nb_evenements": 7,
+      "date_debut": "2025-11-20T10:01:01+00:00",
+      "date_fin": "2026-03-30T11:10:07+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "L'ODYSSEE II",
+      "saison": "hors-fermeture-2020",
+      "fichier": "par_navire_saison/L_ODYSSEE_II__hors-fermeture-2020.json",
+      "nb_points": 3,
+      "nb_points_en_zone": 3,
+      "nb_points_infraction_confirmee": 3,
+      "nb_evenements": 1,
+      "date_debut": "2020-09-14T02:50:59+00:00",
+      "date_fin": "2020-09-14T05:04:14+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "L'ODYSSEE II",
+      "saison": "hors-fermeture-2022",
+      "fichier": "par_navire_saison/L_ODYSSEE_II__hors-fermeture-2022.json",
+      "nb_points": 25,
+      "nb_points_en_zone": 25,
+      "nb_points_infraction_confirmee": 25,
+      "nb_evenements": 2,
+      "date_debut": "2022-09-15T05:50:20+00:00",
+      "date_fin": "2022-10-03T10:33:31+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "L'ODYSSEE II",
+      "saison": "hors-fermeture-2024",
+      "fichier": "par_navire_saison/L_ODYSSEE_II__hors-fermeture-2024.json",
+      "nb_points": 39,
+      "nb_points_en_zone": 39,
+      "nb_points_infraction_confirmee": 39,
+      "nb_evenements": 4,
+      "date_debut": "2024-09-02T03:07:34+00:00",
+      "date_fin": "2024-10-31T14:27:43+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "L'ODYSSEE II",
+      "saison": "hors-fermeture-2025",
+      "fichier": "par_navire_saison/L_ODYSSEE_II__hors-fermeture-2025.json",
+      "nb_points": 14,
+      "nb_points_en_zone": 14,
+      "nb_points_infraction_confirmee": 14,
+      "nb_evenements": 2,
+      "date_debut": "2025-10-08T03:03:23+00:00",
+      "date_fin": "2025-10-22T04:32:32+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "L'OISEAU DES ILES II",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/L_OISEAU_DES_ILES_II__2024-2025.json",
+      "nb_points": 19,
+      "nb_points_en_zone": 19,
+      "nb_points_infraction_confirmee": 19,
+      "nb_evenements": 1,
+      "date_debut": "2025-01-30T04:52:13+00:00",
+      "date_fin": "2025-01-30T10:30:15+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LAURA THALIA II",
+      "saison": "2021-2022",
+      "fichier": "par_navire_saison/LAURA_THALIA_II__2021-2022.json",
+      "nb_points": 8,
+      "nb_points_en_zone": 8,
+      "nb_points_infraction_confirmee": 8,
+      "nb_evenements": 1,
+      "date_debut": "2022-03-29T08:23:10+00:00",
+      "date_fin": "2022-03-29T10:35:00+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LAURA THALIA II",
+      "saison": "2023-2024",
+      "fichier": "par_navire_saison/LAURA_THALIA_II__2023-2024.json",
+      "nb_points": 9,
+      "nb_points_en_zone": 9,
+      "nb_points_infraction_confirmee": 9,
+      "nb_evenements": 1,
+      "date_debut": "2024-04-19T05:21:56+00:00",
+      "date_fin": "2024-04-19T08:34:15+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LAURA THALIA II",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/LAURA_THALIA_II__2024-2025.json",
+      "nb_points": 177,
+      "nb_points_en_zone": 177,
+      "nb_points_infraction_confirmee": 177,
+      "nb_evenements": 17,
+      "date_debut": "2024-11-04T03:31:26+00:00",
+      "date_fin": "2025-04-29T09:53:12+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LAURA THALIA II",
+      "saison": "2025-2026",
+      "fichier": "par_navire_saison/LAURA_THALIA_II__2025-2026.json",
+      "nb_points": 76,
+      "nb_points_en_zone": 76,
+      "nb_points_infraction_confirmee": 76,
+      "nb_evenements": 7,
+      "date_debut": "2025-12-01T09:10:29+00:00",
+      "date_fin": "2026-03-12T09:49:47+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LAURA THALIA II",
+      "saison": "hors-fermeture-2024",
+      "fichier": "par_navire_saison/LAURA_THALIA_II__hors-fermeture-2024.json",
+      "nb_points": 29,
+      "nb_points_en_zone": 29,
+      "nb_points_infraction_confirmee": 29,
+      "nb_evenements": 2,
+      "date_debut": "2024-10-23T03:17:30+00:00",
+      "date_fin": "2024-10-31T11:22:07+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LOU SETORI 2",
+      "saison": "2019-2020",
+      "fichier": "par_navire_saison/LOU_SETORI_2__2019-2020.json",
+      "nb_points": 18,
+      "nb_points_en_zone": 18,
+      "nb_points_infraction_confirmee": 18,
+      "nb_evenements": 1,
+      "date_debut": "2020-04-09T02:25:01+00:00",
+      "date_fin": "2020-04-09T12:10:01+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LOUIS ELIE II",
+      "saison": "2019-2020",
+      "fichier": "par_navire_saison/LOUIS_ELIE_II__2019-2020.json",
+      "nb_points": 69,
+      "nb_points_en_zone": 69,
+      "nb_points_infraction_confirmee": 69,
+      "nb_evenements": 10,
+      "date_debut": "2020-01-06T09:37:16+00:00",
+      "date_fin": "2020-04-08T11:13:38+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LOUIS ELIE II",
+      "saison": "2020-2021",
+      "fichier": "par_navire_saison/LOUIS_ELIE_II__2020-2021.json",
+      "nb_points": 51,
+      "nb_points_en_zone": 51,
+      "nb_points_infraction_confirmee": 51,
+      "nb_evenements": 13,
+      "date_debut": "2020-12-08T10:03:07+00:00",
+      "date_fin": "2021-04-08T10:08:56+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LOUIS ELIE II",
+      "saison": "2021-2022",
+      "fichier": "par_navire_saison/LOUIS_ELIE_II__2021-2022.json",
+      "nb_points": 361,
+      "nb_points_en_zone": 361,
+      "nb_points_infraction_confirmee": 361,
+      "nb_evenements": 27,
+      "date_debut": "2021-11-16T08:26:31+00:00",
+      "date_fin": "2022-04-22T12:05:12+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LOUIS ELIE II",
+      "saison": "2022-2023",
+      "fichier": "par_navire_saison/LOUIS_ELIE_II__2022-2023.json",
+      "nb_points": 266,
+      "nb_points_en_zone": 266,
+      "nb_points_infraction_confirmee": 266,
+      "nb_evenements": 22,
+      "date_debut": "2022-11-17T08:45:08+00:00",
+      "date_fin": "2023-04-24T10:39:21+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LOUIS ELIE II",
+      "saison": "2023-2024",
+      "fichier": "par_navire_saison/LOUIS_ELIE_II__2023-2024.json",
+      "nb_points": 283,
+      "nb_points_en_zone": 283,
+      "nb_points_infraction_confirmee": 283,
+      "nb_evenements": 22,
+      "date_debut": "2023-11-06T06:36:35+00:00",
+      "date_fin": "2024-04-11T11:34:22+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LOUIS ELIE II",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/LOUIS_ELIE_II__2024-2025.json",
+      "nb_points": 319,
+      "nb_points_en_zone": 319,
+      "nb_points_infraction_confirmee": 319,
+      "nb_evenements": 23,
+      "date_debut": "2024-11-18T06:31:54+00:00",
+      "date_fin": "2025-04-25T09:16:10+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LOUIS ELIE II",
+      "saison": "2025-2026",
+      "fichier": "par_navire_saison/LOUIS_ELIE_II__2025-2026.json",
+      "nb_points": 154,
+      "nb_points_en_zone": 154,
+      "nb_points_infraction_confirmee": 154,
+      "nb_evenements": 13,
+      "date_debut": "2025-11-07T06:57:20+00:00",
+      "date_fin": "2026-04-16T09:26:42+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LOUIS ELIE II",
+      "saison": "hors-fermeture-2020",
+      "fichier": "par_navire_saison/LOUIS_ELIE_II__hors-fermeture-2020.json",
+      "nb_points": 9,
+      "nb_points_en_zone": 9,
+      "nb_points_infraction_confirmee": 9,
+      "nb_evenements": 1,
+      "date_debut": "2020-09-04T05:10:07+00:00",
+      "date_fin": "2020-09-04T10:01:06+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LOUIS ELIE II",
+      "saison": "hors-fermeture-2021",
+      "fichier": "par_navire_saison/LOUIS_ELIE_II__hors-fermeture-2021.json",
+      "nb_points": 34,
+      "nb_points_en_zone": 34,
+      "nb_points_infraction_confirmee": 34,
+      "nb_evenements": 4,
+      "date_debut": "2021-09-24T07:34:10+00:00",
+      "date_fin": "2021-10-18T11:09:20+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LOUIS ELIE II",
+      "saison": "hors-fermeture-2023",
+      "fichier": "par_navire_saison/LOUIS_ELIE_II__hors-fermeture-2023.json",
+      "nb_points": 111,
+      "nb_points_en_zone": 111,
+      "nb_points_infraction_confirmee": 111,
+      "nb_evenements": 8,
+      "date_debut": "2023-09-01T05:51:44+00:00",
+      "date_fin": "2023-09-29T07:51:45+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LOUIS ELIE II",
+      "saison": "hors-fermeture-2024",
+      "fichier": "par_navire_saison/LOUIS_ELIE_II__hors-fermeture-2024.json",
+      "nb_points": 3,
+      "nb_points_en_zone": 3,
+      "nb_points_infraction_confirmee": 3,
+      "nb_evenements": 1,
+      "date_debut": "2024-09-23T11:50:09+00:00",
+      "date_fin": "2024-09-23T13:59:07+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "LOUIS ELIE II",
+      "saison": "hors-fermeture-2025",
+      "fichier": "par_navire_saison/LOUIS_ELIE_II__hors-fermeture-2025.json",
+      "nb_points": 10,
+      "nb_points_en_zone": 10,
+      "nb_points_infraction_confirmee": 10,
+      "nb_evenements": 1,
+      "date_debut": "2025-10-08T05:20:22+00:00",
+      "date_fin": "2025-10-08T07:54:18+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "MATTHIAS-THOMAS",
+      "saison": "2022-2023",
+      "fichier": "par_navire_saison/MATTHIAS-THOMAS__2022-2023.json",
+      "nb_points": 7,
+      "nb_points_en_zone": 7,
+      "nb_points_infraction_confirmee": 7,
+      "nb_evenements": 1,
+      "date_debut": "2023-02-03T10:02:58+00:00",
+      "date_fin": "2023-02-03T12:33:50+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "MATTHIAS-THOMAS",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/MATTHIAS-THOMAS__2024-2025.json",
+      "nb_points": 18,
+      "nb_points_en_zone": 18,
+      "nb_points_infraction_confirmee": 18,
+      "nb_evenements": 1,
+      "date_debut": "2025-04-02T06:25:24+00:00",
+      "date_fin": "2025-04-02T09:16:53+00:00",
+      "zones_rencontrees": [
+        "EST"
+      ]
+    },
+    {
+      "bateau": "MATTHIAS-THOMAS",
+      "saison": "2025-2026",
+      "fichier": "par_navire_saison/MATTHIAS-THOMAS__2025-2026.json",
+      "nb_points": 32,
+      "nb_points_en_zone": 32,
+      "nb_points_infraction_confirmee": 32,
+      "nb_evenements": 2,
+      "date_debut": "2026-04-16T06:00:08+00:00",
+      "date_fin": "2026-04-20T09:02:17+00:00",
+      "zones_rencontrees": [
+        "EST"
+      ]
+    },
+    {
+      "bateau": "MERIDIEN",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/MERIDIEN__2024-2025.json",
+      "nb_points": 20,
+      "nb_points_en_zone": 20,
+      "nb_points_infraction_confirmee": 20,
+      "nb_evenements": 3,
+      "date_debut": "2025-04-10T07:19:02+00:00",
+      "date_fin": "2025-04-29T09:38:02+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "MERIDIEN",
+      "saison": "2025-2026",
+      "fichier": "par_navire_saison/MERIDIEN__2025-2026.json",
+      "nb_points": 21,
+      "nb_points_en_zone": 21,
+      "nb_points_infraction_confirmee": 21,
+      "nb_evenements": 2,
+      "date_debut": "2025-11-10T05:40:42+00:00",
+      "date_fin": "2026-02-25T10:02:05+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "NATHALIE VINCENT III",
+      "saison": "2019-2020",
+      "fichier": "par_navire_saison/NATHALIE_VINCENT_III__2019-2020.json",
+      "nb_points": 9,
+      "nb_points_en_zone": 9,
+      "nb_points_infraction_confirmee": 9,
+      "nb_evenements": 1,
+      "date_debut": "2020-04-09T04:20:31+00:00",
+      "date_fin": "2020-04-09T10:45:00+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "NATHALIE VINCENT III",
+      "saison": "2020-2021",
+      "fichier": "par_navire_saison/NATHALIE_VINCENT_III__2020-2021.json",
+      "nb_points": 4,
+      "nb_points_en_zone": 4,
+      "nb_points_infraction_confirmee": 4,
+      "nb_evenements": 1,
+      "date_debut": "2021-02-17T07:19:00+00:00",
+      "date_fin": "2021-02-17T09:35:10+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "NATHALIE VINCENT III",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/NATHALIE_VINCENT_III__2024-2025.json",
+      "nb_points": 28,
+      "nb_points_en_zone": 28,
+      "nb_points_infraction_confirmee": 28,
+      "nb_evenements": 3,
+      "date_debut": "2024-12-02T10:02:47+00:00",
+      "date_fin": "2025-04-09T09:36:02+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "NATHALIE VINCENT III",
+      "saison": "hors-fermeture-2025",
+      "fichier": "par_navire_saison/NATHALIE_VINCENT_III__hors-fermeture-2025.json",
+      "nb_points": 10,
+      "nb_points_en_zone": 10,
+      "nb_points_infraction_confirmee": 10,
+      "nb_evenements": 2,
+      "date_debut": "2025-09-17T05:28:52+00:00",
+      "date_fin": "2025-10-02T12:22:34+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "ND DE LA GARDE",
+      "saison": "hors-fermeture-2020",
+      "fichier": "par_navire_saison/ND_DE_LA_GARDE__hors-fermeture-2020.json",
+      "nb_points": 4,
+      "nb_points_en_zone": 4,
+      "nb_points_infraction_confirmee": 4,
+      "nb_evenements": 1,
+      "date_debut": "2020-09-14T03:23:22+00:00",
+      "date_fin": "2020-09-14T07:23:45+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "NOVA ARMONIA",
+      "saison": "2021-2022",
+      "fichier": "par_navire_saison/NOVA_ARMONIA__2021-2022.json",
+      "nb_points": 21,
+      "nb_points_en_zone": 21,
+      "nb_points_infraction_confirmee": 21,
+      "nb_evenements": 2,
+      "date_debut": "2022-01-10T06:21:33+00:00",
+      "date_fin": "2022-01-11T14:19:17+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "PALANDRIU",
+      "saison": "2019-2020",
+      "fichier": "par_navire_saison/PALANDRIU__2019-2020.json",
+      "nb_points": 55,
+      "nb_points_en_zone": 55,
+      "nb_points_infraction_confirmee": 55,
+      "nb_evenements": 7,
+      "date_debut": "2020-01-10T07:19:05+00:00",
+      "date_fin": "2020-04-21T11:40:23+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "PAOLO MANOE",
+      "saison": "2020-2021",
+      "fichier": "par_navire_saison/PAOLO_MANOE__2020-2021.json",
+      "nb_points": 109,
+      "nb_points_en_zone": 109,
+      "nb_points_infraction_confirmee": 109,
+      "nb_evenements": 13,
+      "date_debut": "2021-02-02T11:05:42+00:00",
+      "date_fin": "2021-04-23T12:35:53+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "PAOLO MANOE",
+      "saison": "2021-2022",
+      "fichier": "par_navire_saison/PAOLO_MANOE__2021-2022.json",
+      "nb_points": 237,
+      "nb_points_en_zone": 237,
+      "nb_points_infraction_confirmee": 237,
+      "nb_evenements": 18,
+      "date_debut": "2021-12-17T04:11:14+00:00",
+      "date_fin": "2022-04-29T11:42:01+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "PAOLO MANOE",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/PAOLO_MANOE__2024-2025.json",
+      "nb_points": 7,
+      "nb_points_en_zone": 7,
+      "nb_points_infraction_confirmee": 7,
+      "nb_evenements": 1,
+      "date_debut": "2025-02-25T04:34:26+00:00",
+      "date_fin": "2025-02-25T11:50:26+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "PAOLO MANOE",
+      "saison": "hors-fermeture-2022",
+      "fichier": "par_navire_saison/PAOLO_MANOE__hors-fermeture-2022.json",
+      "nb_points": 49,
+      "nb_points_en_zone": 49,
+      "nb_points_infraction_confirmee": 49,
+      "nb_evenements": 4,
+      "date_debut": "2022-09-15T03:45:40+00:00",
+      "date_fin": "2022-09-20T10:41:10+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "PAOLO MANOE",
+      "saison": "hors-fermeture-2024",
+      "fichier": "par_navire_saison/PAOLO_MANOE__hors-fermeture-2024.json",
+      "nb_points": 27,
+      "nb_points_en_zone": 27,
+      "nb_points_infraction_confirmee": 27,
+      "nb_evenements": 2,
+      "date_debut": "2024-09-26T05:12:55+00:00",
+      "date_fin": "2024-10-31T09:28:20+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "PAOLO MANOE",
+      "saison": "hors-fermeture-2025",
+      "fichier": "par_navire_saison/PAOLO_MANOE__hors-fermeture-2025.json",
+      "nb_points": 7,
+      "nb_points_en_zone": 7,
+      "nb_points_infraction_confirmee": 7,
+      "nb_evenements": 1,
+      "date_debut": "2025-09-26T03:08:33+00:00",
+      "date_fin": "2025-09-26T05:14:33+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "PAOLO MANOE II",
+      "saison": "2022-2023",
+      "fichier": "par_navire_saison/PAOLO_MANOE_II__2022-2023.json",
+      "nb_points": 23,
+      "nb_points_en_zone": 23,
+      "nb_points_infraction_confirmee": 23,
+      "nb_evenements": 2,
+      "date_debut": "2022-11-25T08:45:02+00:00",
+      "date_fin": "2023-04-19T11:48:18+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "PAOLO MANOE II",
+      "saison": "2023-2024",
+      "fichier": "par_navire_saison/PAOLO_MANOE_II__2023-2024.json",
+      "nb_points": 123,
+      "nb_points_en_zone": 123,
+      "nb_points_infraction_confirmee": 123,
+      "nb_evenements": 14,
+      "date_debut": "2023-11-06T03:40:34+00:00",
+      "date_fin": "2024-04-26T05:20:58+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "PAOLO MANOE II",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/PAOLO_MANOE_II__2024-2025.json",
+      "nb_points": 7,
+      "nb_points_en_zone": 7,
+      "nb_points_infraction_confirmee": 7,
+      "nb_evenements": 1,
+      "date_debut": "2025-01-14T09:46:04+00:00",
+      "date_fin": "2025-01-14T11:56:33+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "PAOLO MANOE II",
+      "saison": "2025-2026",
+      "fichier": "par_navire_saison/PAOLO_MANOE_II__2025-2026.json",
+      "nb_points": 74,
+      "nb_points_en_zone": 74,
+      "nb_points_infraction_confirmee": 74,
+      "nb_evenements": 8,
+      "date_debut": "2025-11-05T03:42:51+00:00",
+      "date_fin": "2026-04-28T10:45:27+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "PAOLO MANOE II",
+      "saison": "hors-fermeture-2023",
+      "fichier": "par_navire_saison/PAOLO_MANOE_II__hors-fermeture-2023.json",
+      "nb_points": 52,
+      "nb_points_en_zone": 52,
+      "nb_points_infraction_confirmee": 52,
+      "nb_evenements": 5,
+      "date_debut": "2023-09-05T03:05:49+00:00",
+      "date_fin": "2023-10-09T08:41:37+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "PHENIX",
+      "saison": "2020-2021",
+      "fichier": "par_navire_saison/PHENIX__2020-2021.json",
+      "nb_points": 14,
+      "nb_points_en_zone": 14,
+      "nb_points_infraction_confirmee": 14,
+      "nb_evenements": 2,
+      "date_debut": "2021-02-11T08:02:44+00:00",
+      "date_fin": "2021-03-24T11:59:13+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "PHILICHRIST",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/PHILICHRIST__2024-2025.json",
+      "nb_points": 8,
+      "nb_points_en_zone": 8,
+      "nb_points_infraction_confirmee": 8,
+      "nb_evenements": 1,
+      "date_debut": "2024-11-06T07:48:13+00:00",
+      "date_fin": "2024-11-06T09:50:03+00:00",
+      "zones_rencontrees": [
+        "EST"
+      ]
+    },
+    {
+      "bateau": "RAYMOND ELISE IV",
+      "saison": "2019-2020",
+      "fichier": "par_navire_saison/RAYMOND_ELISE_IV__2019-2020.json",
+      "nb_points": 22,
+      "nb_points_en_zone": 22,
+      "nb_points_infraction_confirmee": 22,
+      "nb_evenements": 2,
+      "date_debut": "2020-01-15T09:20:16+00:00",
+      "date_fin": "2020-01-20T11:28:36+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "RAYMOND ELISE IV",
+      "saison": "2021-2022",
+      "fichier": "par_navire_saison/RAYMOND_ELISE_IV__2021-2022.json",
+      "nb_points": 18,
+      "nb_points_en_zone": 18,
+      "nb_points_infraction_confirmee": 18,
+      "nb_evenements": 2,
+      "date_debut": "2022-01-11T07:57:36+00:00",
+      "date_fin": "2022-01-12T09:40:47+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "RAYMOND ELISE IV",
+      "saison": "2022-2023",
+      "fichier": "par_navire_saison/RAYMOND_ELISE_IV__2022-2023.json",
+      "nb_points": 24,
+      "nb_points_en_zone": 24,
+      "nb_points_infraction_confirmee": 24,
+      "nb_evenements": 2,
+      "date_debut": "2022-12-29T08:27:28+00:00",
+      "date_fin": "2023-01-05T12:25:03+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "RAYMOND ELISE IV",
+      "saison": "2023-2024",
+      "fichier": "par_navire_saison/RAYMOND_ELISE_IV__2023-2024.json",
+      "nb_points": 219,
+      "nb_points_en_zone": 219,
+      "nb_points_infraction_confirmee": 219,
+      "nb_evenements": 17,
+      "date_debut": "2023-11-20T07:33:17+00:00",
+      "date_fin": "2024-01-12T11:11:18+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "RAYMOND ELISE IV",
+      "saison": "2024-2025",
+      "fichier": "par_navire_saison/RAYMOND_ELISE_IV__2024-2025.json",
+      "nb_points": 174,
+      "nb_points_en_zone": 174,
+      "nb_points_infraction_confirmee": 174,
+      "nb_evenements": 12,
+      "date_debut": "2024-11-26T11:31:38+00:00",
+      "date_fin": "2025-03-04T11:19:51+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "RAYMOND ELISE IV",
+      "saison": "2025-2026",
+      "fichier": "par_navire_saison/RAYMOND_ELISE_IV__2025-2026.json",
+      "nb_points": 86,
+      "nb_points_en_zone": 86,
+      "nb_points_infraction_confirmee": 86,
+      "nb_evenements": 5,
+      "date_debut": "2025-12-08T06:37:52+00:00",
+      "date_fin": "2026-01-12T12:37:07+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "ROGER CHRISTIAN III",
+      "saison": "2019-2020",
+      "fichier": "par_navire_saison/ROGER_CHRISTIAN_III__2019-2020.json",
+      "nb_points": 6,
+      "nb_points_en_zone": 6,
+      "nb_points_infraction_confirmee": 6,
+      "nb_evenements": 1,
+      "date_debut": "2020-02-18T07:07:45+00:00",
+      "date_fin": "2020-02-18T09:27:26+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "ROGER CHRISTIAN III",
+      "saison": "2021-2022",
+      "fichier": "par_navire_saison/ROGER_CHRISTIAN_III__2021-2022.json",
+      "nb_points": 137,
+      "nb_points_en_zone": 137,
+      "nb_points_infraction_confirmee": 137,
+      "nb_evenements": 11,
+      "date_debut": "2022-01-04T12:04:36+00:00",
+      "date_fin": "2022-04-29T12:28:40+00:00",
+      "zones_rencontrees": [
+        "EST",
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "ROGER CHRISTIAN III",
+      "saison": "2022-2023",
+      "fichier": "par_navire_saison/ROGER_CHRISTIAN_III__2022-2023.json",
+      "nb_points": 194,
+      "nb_points_en_zone": 194,
+      "nb_points_infraction_confirmee": 194,
+      "nb_evenements": 16,
+      "date_debut": "2022-12-09T04:18:12+00:00",
+      "date_fin": "2023-03-20T05:54:02+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "VINCENZO",
+      "saison": "2020-2021",
+      "fichier": "par_navire_saison/VINCENZO__2020-2021.json",
+      "nb_points": 5,
+      "nb_points_en_zone": 5,
+      "nb_points_infraction_confirmee": 5,
+      "nb_evenements": 1,
+      "date_debut": "2021-04-23T06:56:59+00:00",
+      "date_fin": "2021-04-23T09:46:39+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    },
+    {
+      "bateau": "VINCENZO",
+      "saison": "hors-fermeture-2020",
+      "fichier": "par_navire_saison/VINCENZO__hors-fermeture-2020.json",
+      "nb_points": 4,
+      "nb_points_en_zone": 4,
+      "nb_points_infraction_confirmee": 4,
+      "nb_evenements": 1,
+      "date_debut": "2020-09-14T08:18:45+00:00",
+      "date_fin": "2020-09-14T10:29:35+00:00",
+      "zones_rencontrees": [
+        "OUEST"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "lat":43.045785,
+    "lon":4.00286,
+    "course":132.1000061035,
+    "speed":5.0999999046,
+    "timestamp":"2020-09-14T02:50:59.000Z",
+    "depth":-97.0,
+    "status":"pêche",
+    "event_id_unique":"L'ODYSSEE II_evt_1238",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.0276,
+    "lon":4.0278333333,
+    "course":132.1000061035,
+    "speed":4.1999998093,
+    "timestamp":"2020-09-14T03:11:19.000Z",
+    "depth":-95.0,
+    "status":"pêche",
+    "event_id_unique":"L'ODYSSEE II_evt_1238",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.9721416667,
+    "lon":4.19164,
+    "course":117.0,
+    "speed":4.1999998093,
+    "timestamp":"2020-09-14T05:04:14.000Z",
+    "depth":-96.0,
+    "status":"pêche",
+    "event_id_unique":"L'ODYSSEE II_evt_1238",
+    "zone_detection":"OUEST"
+  }
+]

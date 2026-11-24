@@ -1,0 +1,177 @@
+[
+  {
+    "nom": "ANGEVANN",
+    "nom_normalise": "ANGEVANN",
+    "pays": "France",
+    "registration": "915202",
+    "mmsi": "227312050.0"
+  },
+  {
+    "nom": "CATALINA GODO",
+    "nom_normalise": "CATALINA GODO",
+    "pays": "Spain",
+    "registration": "3BA-6-1-99",
+    "mmsi": "224000390.0"
+  },
+  {
+    "nom": "CHRISTIANE ROGER",
+    "nom_normalise": "CHRISTIANE ROGER",
+    "pays": "France",
+    "registration": "711693",
+    "mmsi": "227130300.0"
+  },
+  {
+    "nom": "COSTA MEDITERRANIA",
+    "nom_normalise": "COSTA MEDITERRANIA",
+    "pays": "Spain",
+    "registration": "3BA-6-3-94",
+    "mmsi": "224096950.0"
+  },
+  {
+    "nom": "DON BORJA",
+    "nom_normalise": "DON BORJA",
+    "pays": "Spain",
+    "registration": "3HU-2-1874",
+    "mmsi": "224106860.0"
+  },
+  {
+    "nom": "ELI HERMI II",
+    "nom_normalise": "ELI HERMI II",
+    "pays": "Spain",
+    "registration": "3TA-3-2621",
+    "mmsi": "224126630.0"
+  },
+  {
+    "nom": "ESTEL D'ROSES",
+    "nom_normalise": "ESTEL D'ROSES",
+    "pays": "Spain",
+    "registration": "3BA-6-1-94",
+    "mmsi": "224095180.0"
+  },
+  {
+    "nom": "FERRAN",
+    "nom_normalise": "FERRAN",
+    "pays": "Spain",
+    "registration": "3BA-3-2644",
+    "mmsi": "224248220.0"
+  },
+  {
+    "nom": "GERMANS MAURA",
+    "nom_normalise": "GERMANS MAURA",
+    "pays": "Spain",
+    "registration": "3TA-1-3-91",
+    "mmsi": "224047490.0"
+  },
+  {
+    "nom": "J.GARRIGA",
+    "nom_normalise": "J.GARRIGA",
+    "pays": "Spain",
+    "registration": "3BA-2-1-06",
+    "mmsi": "224200490.0"
+  },
+  {
+    "nom": "JOANET",
+    "nom_normalise": "JOANET",
+    "pays": "Spain",
+    "registration": "3CP-3-6-95",
+    "mmsi": "224005270.0"
+  },
+  {
+    "nom": "JOSEPH DI TRENTO",
+    "nom_normalise": "JOSEPH DI TRENTO",
+    "pays": "France",
+    "registration": "568849",
+    "mmsi": "227318890.0"
+  },
+  {
+    "nom": "MARGARITA Y ELENA",
+    "nom_normalise": "MARGARITA Y ELENA",
+    "pays": "Spain",
+    "registration": "3TA-1-3-00",
+    "mmsi": "224014890.0"
+  },
+  {
+    "nom": "MERIDIEN",
+    "nom_normalise": "MERIDIEN",
+    "pays": "France",
+    "registration": "568581",
+    "mmsi": "227321780.0"
+  },
+  {
+    "nom": "MONTSENY",
+    "nom_normalise": "MONTSENY",
+    "pays": "Spain",
+    "registration": "3BA-3-1-13",
+    "mmsi": "225980880.0"
+  },
+  {
+    "nom": "NORAI",
+    "nom_normalise": "NORAI",
+    "pays": "Spain",
+    "registration": "3BA-3-2-98",
+    "mmsi": "224072140.0"
+  },
+  {
+    "nom": "NOU ESTEVE",
+    "nom_normalise": "NOU ESTEVE",
+    "pays": "Spain",
+    "registration": "3BA-6-6-02",
+    "mmsi": "224080940.0"
+  },
+  {
+    "nom": "NOVA ARMONIA",
+    "nom_normalise": "NOVA ARMONIA",
+    "pays": "Spain",
+    "registration": "3TA-1-5-05",
+    "mmsi": "224175320.0"
+  },
+  {
+    "nom": "PALANDRIU",
+    "nom_normalise": "PALANDRIU",
+    "pays": "Spain",
+    "registration": "3BA-6-7-02",
+    "mmsi": "224072190.0"
+  },
+  {
+    "nom": "PAPA BARRANCO",
+    "nom_normalise": "PAPA BARRANCO",
+    "pays": "Spain",
+    "registration": "3CP-2-3-06",
+    "mmsi": "224222430.0"
+  },
+  {
+    "nom": "PASTOR SEGON",
+    "nom_normalise": "PASTOR SEGON",
+    "pays": "Spain",
+    "registration": "3BA-6-6-06",
+    "mmsi": "224218850.0"
+  },
+  {
+    "nom": "PORT DE ROSES",
+    "nom_normalise": "PORT DE ROSES",
+    "pays": "Spain",
+    "registration": "3BA-6-2-05",
+    "mmsi": "224160250.0"
+  },
+  {
+    "nom": "ROCA FORNE",
+    "nom_normalise": "ROCA FORNE",
+    "pays": "Spain",
+    "registration": "3TA-1-4-04",
+    "mmsi": "224303360.0"
+  },
+  {
+    "nom": "ROSA SALADIE SEGUNDO",
+    "nom_normalise": "ROSA SALADIE SEGUNDO",
+    "pays": "Spain",
+    "registration": "3TA-1-4-95",
+    "mmsi": "224070490.0"
+  },
+  {
+    "nom": "VINCENZO",
+    "nom_normalise": "VINCENZO",
+    "pays": "France",
+    "registration": "374004",
+    "mmsi": "227321170.0"
+  }
+]

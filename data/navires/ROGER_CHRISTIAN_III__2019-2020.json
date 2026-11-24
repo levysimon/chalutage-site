@@ -1,0 +1,68 @@
+[
+  {
+    "lat":42.9450766667,
+    "lon":3.4792283333,
+    "course":162.0,
+    "speed":4.0999999046,
+    "timestamp":"2020-02-18T07:07:45.000Z",
+    "depth":-93.0,
+    "status":"pêche",
+    "event_id_unique":"ROGER CHRISTIAN III_evt_1314",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.9330766667,
+    "lon":3.492345,
+    "course":122.0,
+    "speed":3.9000000954,
+    "timestamp":"2020-02-18T07:23:05.000Z",
+    "depth":-94.0,
+    "status":"pêche",
+    "event_id_unique":"ROGER CHRISTIAN III_evt_1314",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.93279,
+    "lon":3.51039,
+    "course":241.0,
+    "speed":5.8000001907,
+    "timestamp":"2020-02-18T08:02:36.000Z",
+    "depth":-94.0,
+    "status":"pêche",
+    "event_id_unique":"ROGER CHRISTIAN III_evt_1314",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.911835,
+    "lon":3.5059366667,
+    "course":166.0,
+    "speed":4.1999998093,
+    "timestamp":"2020-02-18T08:22:36.000Z",
+    "depth":-95.0,
+    "status":"pêche",
+    "event_id_unique":"ROGER CHRISTIAN III_evt_1314",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.90174,
+    "lon":3.5302483333,
+    "course":98.0,
+    "speed":4.0999999046,
+    "timestamp":"2020-02-18T08:42:45.000Z",
+    "depth":-95.0,
+    "status":"pêche",
+    "event_id_unique":"ROGER CHRISTIAN III_evt_1314",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.89624,
+    "lon":3.5785466667,
+    "course":101.0,
+    "speed":2.7000000477,
+    "timestamp":"2020-02-18T09:27:26.000Z",
+    "depth":-96.0,
+    "status":"pêche",
+    "event_id_unique":"ROGER CHRISTIAN III_evt_1314",
+    "zone_detection":"OUEST"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "lat":43.1509133333,
+    "lon":4.82898,
+    "course":83.1999969482,
+    "speed":4.1999998093,
+    "timestamp":"2020-04-07T06:09:16.000Z",
+    "depth":-103.0,
+    "status":"pêche",
+    "event_id_unique":"JULIARTH II_evt_1343",
+    "zone_detection":"EST"
+  },
+  {
+    "lat":43.1550583333,
+    "lon":4.8543833333,
+    "course":73.6999969482,
+    "speed":4.1999998093,
+    "timestamp":"2020-04-07T06:25:17.000Z",
+    "depth":-105.0,
+    "status":"pêche",
+    "event_id_unique":"JULIARTH II_evt_1343",
+    "zone_detection":"EST"
+  },
+  {
+    "lat":43.1621883333,
+    "lon":4.8782733333,
+    "course":62.9000015259,
+    "speed":4.0999999046,
+    "timestamp":"2020-04-07T06:41:27.000Z",
+    "depth":-107.0,
+    "status":"pêche",
+    "event_id_unique":"JULIARTH II_evt_1343",
+    "zone_detection":"EST"
+  },
+  {
+    "lat":43.155345,
+    "lon":4.84967,
+    "course":257.799987793,
+    "speed":4.1999998093,
+    "timestamp":"2020-04-07T07:33:28.000Z",
+    "depth":-105.0,
+    "status":"pêche",
+    "event_id_unique":"JULIARTH II_evt_1343",
+    "zone_detection":"EST"
+  },
+  {
+    "lat":43.143225,
+    "lon":4.8258283333,
+    "course":210.8999938965,
+    "speed":3.9000000954,
+    "timestamp":"2020-04-07T07:52:36.000Z",
+    "depth":-103.0,
+    "status":"pêche",
+    "event_id_unique":"JULIARTH II_evt_1343",
+    "zone_detection":"EST"
+  },
+  {
+    "lat":43.1077666667,
+    "lon":4.7979066667,
+    "course":208.8999938965,
+    "speed":4.0999999046,
+    "timestamp":"2020-04-07T08:28:47.000Z",
+    "depth":-102.0,
+    "status":"pêche",
+    "event_id_unique":"JULIARTH II_evt_1343",
+    "zone_detection":"EST"
+  }
+]

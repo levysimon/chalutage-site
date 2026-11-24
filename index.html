@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Chalutage dans le golfe du Lion — ce que montrent les données</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+<style>
+  :root{
+    --ink:#0e1b26;
+    --panel:#0e2233;
+    --panel-2:#123049;
+    --paper:#f4f1ea;
+    --accent:#c98a3a;
+    --accent-2:#3aa0a0;
+    --danger:#c0392b;
+    --line:rgba(255,255,255,0.12);
+    --mono: 'IBM Plex Mono','SFMono-Regular',Consolas,monospace;
+    --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --sans: 'IBM Plex Sans', 'Segoe UI', Arial, sans-serif;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+  *{box-sizing:border-box;}
+  html{scroll-padding-top: env(safe-area-inset-top, 0px);}
+  body{
+    margin:0; background:var(--paper); color:#1b2530;
+    font-family:var(--serif); line-height:1.65;
+  }
+
+  header{
+    background:var(--ink); color:#eef2f0; padding:56px 24px 44px;
+    border-bottom:5px solid var(--accent);
+  }
+  .header-inner{max-width:680px;margin:0 auto;}
+  .kicker{
+    font-family:var(--mono); font-size:12.5px; color:var(--accent-2);
+    letter-spacing:.4px; margin-bottom:16px;
+  }
+  h1{
+    font-family:var(--serif); font-weight:700; font-size:clamp(28px,5vw,42px);
+    line-height:1.15; margin:0 0 18px 0;
+  }
+  .lead{
+    font-size:18px; color:#c7d5dc; max-width:60ch; margin:0;
+    font-style:italic;
+  }
+
+  main{max-width:680px;margin:0 auto;padding:44px 24px 90px;}
+
+  h2{
+    font-family:var(--sans); font-weight:600; font-size:13px;
+    text-transform:uppercase; letter-spacing:1px; color:#8a6a2e;
+    border-top:2px solid #1b2530; padding-top:10px; margin:48px 0 18px 0;
+  }
+  h2:first-of-type{margin-top:0;}
+
+  p{margin:0 0 18px 0; font-size:17px;}
+  strong{font-weight:700;}
+
+  .figures{
+    display:grid; grid-template-columns:1fr 1fr; gap:1px;
+    background:#1b2530; border:1px solid #1b2530; margin:22px 0 8px 0;
+  }
+  .figure-card{background:var(--paper); padding:20px 18px;}
+  .figure-card .zone{font-family:var(--sans); font-size:12px; text-transform:uppercase; letter-spacing:.6px; color:#8a6a2e; margin-bottom:8px;}
+  .figure-card .num{font-family:var(--serif); font-weight:700; font-size:30px; line-height:1.1; margin-bottom:2px;}
+  .figure-card .label{font-family:var(--sans); font-size:12.5px; color:#5a6672;}
+  .figure-card .top-vessels{margin-top:14px; font-family:var(--sans); font-size:12.5px; color:#3a4650; line-height:1.6; border-top:1px solid #d8d3c5; padding-top:10px;}
+
+  .callout{
+    background:var(--ink); color:#e8f0f4; padding:26px 24px;
+    margin:32px 0; border-left:5px solid var(--danger);
+  }
+  .callout .callout-label{
+    font-family:var(--sans); font-size:11.5px; text-transform:uppercase;
+    letter-spacing:1px; color:#e8a598; margin-bottom:12px; font-weight:600;
+  }
+  .callout p{color:#dbe6ec; font-size:15.5px; margin-bottom:14px;}
+  .callout p:last-child{margin-bottom:0;}
+
+  .controls-grid{
+    display:flex; gap:14px; margin:20px 0 4px 0; flex-wrap:wrap;
+  }
+  .control-stat{
+    flex:1; min-width:180px; background:#fff; border:1px solid #d8d3c5; padding:16px 18px;
+  }
+  .control-stat .n{font-family:var(--serif); font-weight:700; font-size:22px;}
+  .control-stat .d{font-family:var(--sans); font-size:12px; color:#5a6672; margin-top:4px;}
+
+  ul{padding-left:22px; margin:0 0 18px 0;}
+  li{font-size:16px; margin-bottom:8px;}
+
+  .glossary{
+    font-family:var(--sans); font-size:14px; color:#3a4650;
+  }
+  .glossary dt{font-weight:600; margin-top:12px;}
+  .glossary dd{margin:2px 0 0 0; color:#5a6672;}
+
+  .cta-wrap{
+    margin:56px 0 0 0; padding:32px; background:var(--panel);
+    text-align:center; border-radius:4px;
+  }
+  .cta-wrap p{color:#9fb3c2; font-family:var(--sans); font-size:14px; margin-bottom:18px;}
+  .cta-btn{
+    display:inline-flex; align-items:center; gap:10px;
+    background:var(--accent); color:#1b1206; font-family:var(--sans);
+    font-weight:600; font-size:15px; text-decoration:none;
+    padding:14px 26px; border-radius:4px; transition:background .15s;
+  }
+  .cta-btn:hover{background:#e0a655;}
+
+  footer{
+    max-width:680px;margin:0 auto; padding:0 24px 60px;
+    font-family:var(--sans); font-size:12.5px; color:#8a95a0;
+  }
+
+  @media (max-width:520px){
+    .figures{grid-template-columns:1fr;}
+  }
+
+
+  /* ===== Styles de la carte interactive (scopés à #map-section) ===== */
+
+  :root{
+    --ink:#0e1b26;
+    --paper:#eef2f0;
+    --panel:#0e2233;
+    --panel-2:#123049;
+    --accent:#c98a3a;
+    --accent-2:#3aa0a0;
+    --danger:#c0392b;
+    --line:rgba(255,255,255,0.12);
+    --mono: 'IBM Plex Mono','SFMono-Regular',Consolas,monospace;
+    --sans: 'IBM Plex Sans', 'Segoe UI', Arial, sans-serif;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+  *{box-sizing:border-box;}
+  #map-section{font-family:var(--sans);background:var(--ink);color:#eef2f0;}
+  #map-section #app{display:flex;height:100vh;width:100%;}
+
+  /* ---- Sidebar ---- */
+  #sidebar{
+    width:340px;min-width:340px;
+    background:var(--panel);
+    border-right:1px solid var(--line);
+    display:flex;flex-direction:column;
+    overflow-y:auto;
+    z-index:1200;
+  }
+  #sidebar-header{
+    padding:20px 20px 14px 20px;
+    border-bottom:1px solid var(--line);
+  }
+  #sidebar-header h1{
+    margin:0 0 4px 0;
+    font-size:17px;
+    font-weight:700;
+    letter-spacing:0.2px;
+    line-height:1.3;
+  }
+  #sidebar-header p{
+    margin:0;
+    font-size:12.5px;
+    color:#9fb3c2;
+    line-height:1.5;
+  }
+  .section{
+    padding:16px 20px;
+    border-bottom:1px solid var(--line);
+  }
+  .section h2{
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+    color:#7f97a8;
+    margin:0 0 12px 0;
+    font-weight:600;
+  }
+  .zone-item{
+    display:flex;align-items:center;gap:10px;
+    font-size:13px;padding:7px 0;color:#dbe6ec;
+  }
+  .swatch{width:14px;height:14px;border-radius:3px;flex:none;}
+  .zone-item small{display:block;color:#8ba0af;font-size:11px;margin-top:1px;}
+
+  .btn-list{display:flex;flex-direction:column;gap:6px;}
+  .btn{
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+    background:var(--panel-2);
+    border:1px solid var(--line);
+    color:#e8f0f4;
+    padding:9px 12px;
+    border-radius:7px;
+    font-size:13px;
+    font-family:var(--sans);
+    cursor:pointer;
+    text-align:left;
+    transition:background .15s, border-color .15s, transform .1s;
+  }
+  .btn:hover{background:#173a58;border-color:rgba(255,255,255,0.22);}
+  .btn.active{
+    background:linear-gradient(0deg, rgba(201,138,58,0.18), rgba(201,138,58,0.18)), var(--panel-2);
+    border-color:var(--accent);
+  }
+  .btn .dot{width:9px;height:9px;border-radius:50%;flex:none;}
+  .btn .count{
+    font-family:var(--mono);
+    font-size:11px;color:#9fb3c2;
+  }
+  .btn.all{justify-content:center;font-weight:600;letter-spacing:.3px;}
+
+  #img-toggle-row{display:flex;align-items:center;justify-content:space-between;}
+  .switch{
+    position:relative;width:42px;height:23px;flex:none;
+  }
+  .switch input{opacity:0;width:0;height:0;}
+  .slider{
+    position:absolute;cursor:pointer;inset:0;
+    background:#2c4256;border-radius:20px;transition:.15s;
+  }
+  .slider:before{
+    position:absolute;content:"";height:17px;width:17px;left:3px;top:3px;
+    background:#cfd9de;border-radius:50%;transition:.15s;
+  }
+  input:checked + .slider{background:var(--accent-2);}
+  input:checked + .slider:before{transform:translateX(19px);background:#fff;}
+
+  #legend-note{
+    font-size:11.5px;color:#7f97a8;line-height:1.6;padding:16px 20px;
+  }
+  #legend-note b{color:#c9d6dd;}
+
+  /* ---- Map ---- */
+  #map-wrap{flex:1;position:relative;}
+  #map{height:100%;width:100%;background:#0a1420;}
+
+  .leaflet-popup-content-wrapper{
+    background:var(--panel);color:#e8f0f4;border-radius:8px;
+    font-family:var(--sans);
+  }
+  .leaflet-popup-tip{background:var(--panel);}
+  .popup-title{font-weight:700;font-size:13px;margin-bottom:6px;}
+  .popup-row{display:flex;justify-content:space-between;gap:14px;font-size:12px;padding:2px 0;color:#c7d5dc;}
+  .popup-row b{color:#fff;font-family:var(--mono);font-weight:500;}
+  .popup-img{margin-top:8px;max-width:220px;border-radius:5px;display:block;border:1px solid var(--line);}
+  .popup-cap{font-size:11px;color:#93a9b6;margin-top:5px;font-style:italic;}
+
+  .vessel-arrow{
+    filter: drop-shadow(0 0 1px rgba(0,0,0,.7));
+  }
+
+  .cam-marker{
+    background:#fff;border:2px solid var(--accent);border-radius:50%;
+    width:26px;height:26px;display:flex;align-items:center;justify-content:center;
+    font-size:14px;box-shadow:0 1px 4px rgba(0,0,0,.5);
+  }
+
+  #top-strip{
+    position:absolute;top:14px;left:14px;right:14px;
+    display:flex;justify-content:space-between;align-items:flex-start;
+    pointer-events:none;
+    z-index:1000;
+  }
+  #title-chip{
+    pointer-events:auto;
+    background:rgba(14,27,38,0.88);
+    backdrop-filter:blur(4px);
+    border:1px solid var(--line);
+    padding:9px 14px;border-radius:8px;
+    font-family:var(--mono);font-size:11.5px;color:#cfe0e8;
+    letter-spacing:.3px;
+  }
+  #title-chip b{color:var(--accent);}
+  #current-filter[data-loading="1"]::after{content:" · chargement… (" attr(data-pending) " fichier(s) restant(s))";color:#8ba0af;font-style:italic;}
+
+  #scale-note{
+    pointer-events:auto;
+    background:rgba(14,27,38,0.88);
+    border:1px solid var(--line);
+    padding:9px 12px;border-radius:8px;
+    font-family:var(--mono);font-size:10.5px;color:#8ba0af;
+    max-width:260px;text-align:right;
+  }
+
+  ::-webkit-scrollbar{width:8px;}
+  ::-webkit-scrollbar-thumb{background:#25455d;border-radius:4px;}
+  ::-webkit-scrollbar-track{background:transparent;}
+
+  @media (max-width: 820px){
+    #app{flex-direction:column;}
+    #sidebar{width:100%;min-width:0;max-height:46vh;order:2;border-right:none;border-top:1px solid var(--line);}
+    #map-wrap{order:1;height:54vh;}
+  }
+
+  #map-section{scroll-margin-top:0;}
+  #map-section-header{
+    background:#0a1620; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+    padding:14px 24px;
+  }
+  .msh-inner{
+    max-width:1400px; margin:0 auto; display:flex; align-items:center; justify-content:space-between;
+  }
+  .msh-label{
+    font-family:var(--mono); font-size:11.5px; letter-spacing:1px; text-transform:uppercase;
+    color:var(--accent-2);
+  }
+  .msh-back{
+    font-family:var(--sans); font-size:12.5px; color:#9fb3c2; text-decoration:none;
+  }
+  .msh-back:hover{color:#e8f0f4;}
+
+</style>
+</head>
+<body>
+
+
+<header id="top">
+  <div class="header-inner">
+    <div class="kicker">GOLFE DU LION — ANALYSE CHALUTAGE FRANCAIS</div>
+    <h1>Chalutage dans des zones protégées du golfe du Lion&nbsp;: ce que montrent les données</h1>
+    <p class="lead">Des relevés AIS et des images satellite font apparaître une présence répétée de chalutiers français dans deux zones où le chalutage de fond est interdit une partie de l'année. Cette présence, à elle seule, ne permet pas d'établir une infraction.</p>
+  </div>
+</header>
+
+<main>
+
+  <h2>Deux zones, une même règle</h2>
+  <p>Le golfe du Lion abrite une zone de pêche à accès réglementé, créée en 2009 par la Commission générale des pêches pour la Méditerranée afin de protéger les stocks de poissons de fond. En décembre 2019, la France y a ajouté une interdiction saisonnière du chalutage démersal — le chalutage de fond, qui racle le sol marin, par opposition au chalutage pélagique qui pêche dans la colonne d'eau.</p>
+  <p>Deux zones sont concernées :</p>
+  <ol>
+    <li><strong>La FRA Est</strong> (2&nbsp;500&nbsp;km²) est fermée au chalutage de fond du 1<sup>er</sup> novembre au 30 avril.</li>
+    <li><strong>La FRA Ouest</strong> (~ 2&nbsp;700&nbsp;km², la bande de fonds marins entre 90 et 100 mètres de profondeur, jusqu'à la frontière espagnole) est fermée huit mois par an, de novembre à juin.</li>
+  </ol>
+  <p>D'autres règles encadrent par ailleurs l'activité des chalutiers français en Méditerranée&nbsp;: 250 jours de sortie maximum par an, 5 jours par semaine, 15 heures de chalutage par jour (18 en dérogation).</p>
+  
+  <h2>Comment les bateaux ont été suivis</h2>
+  <p>Les navires titulaires d'une autorisation de chalutage, pélagique ou démersal, dans le registre de la CGPM pour la zone GSA7 (golfe du Lion) ont été identifiés, puis leurs positions AIS récupérées via Global Fishing Watch. Un algorithme de classification (k-means) a réparti les positions de chaque navire en quatre catégories selon la vitesse&nbsp;: à l'arrêt au port, en transit, en pêche, en dérive.</p>
+  <p>Pour qualifier un événement de pêche suspect, les critères suivants ont été retenus&nbsp;:</p>
+  <ul>
+    <li><strong>Localisation stricte&nbsp;:</strong> présence dans une zone réglementée durant sa période de fermeture, en appliquant une marge de sécurité de 500 mètres pour écarter les imprécisions GPS.</li>
+    <li><strong>Vitesse&nbsp;:</strong> au moins trois points consécutifs à une allure compatible avec l'action de chalutage.</li>
+    <li><strong>Durée&nbsp;:</strong> maintien de cette activité pendant au moins deux heures.</li>
+  </ul>
+  <p>Ces événement de pêche suspects échantillon de ces positions a ensuite été recoupé avec des images satellite Sentinel-2, pour confirmer visuellement la présence d'un navire à l'endroit et à l'heure indiqués.</p>
+
+  <h2>Ce que montrent les chiffres</h2>
+  <div class="figures">
+      <div class="figure-card">
+        <div class="zone">FRA Ouest</div>
+        <div class="num">511</div>
+        <div class="label">événements de chalutage suspecté</div>
+        <div class="num" style="margin-top:10px;">2&nbsp;415&nbsp;h</div>
+        <div class="label">cumulées en zone fermée</div>
+        <div class="top-vessels">
+          LOUIS ELIE II — 127 évt. / 517&nbsp;h<br>
+          GIOVANNI-JEAN — 76 évt. / 391&nbsp;h<br>
+          RAYMOND ELISE IV — 40 évt. / 164&nbsp;h<br>
+          PAOLO MANOE — 39 évt. / 214&nbsp;h<br>
+          29 autres navires — 1 à 40 évt. chacun
+        </div>
+      </div>
+      <div class="figure-card">
+        <div class="zone">FRA Est</div>
+        <div class="num">88</div>
+        <div class="label">événements de chalutage suspecté</div>
+        <div class="num" style="margin-top:10px;">306&nbsp;h</div>
+        <div class="label">cumulées en zone fermée</div>
+        <div class="top-vessels">
+          JULIARTH II — 53 évt. / 189&nbsp;h<br>
+          LOUIS ELIE II — 15 évt. / 52&nbsp;h<br>
+          8 autres navires — 1 à 5 évt. chacun
+        </div>
+      </div>
+    </div>
+
+  <div class="callout">
+    <div class="callout-label">Une limite centrale à ces chiffres</div>
+    <p>Une partie des navires les plus représentés dans ces chiffres possède une double autorisation de chalutage, pélagique <em><strong>et</strong></em> démersal. Or le chalutage pélagique est autorisé toute l'année dans les deux zones. Les données AIS, à elles seules, ne permettent pas de déterminer quel engin était réellement déployé lors d'une sortie donnée. Cela impose la plus grande prudence avant d'avancer la moindre accusation.</p>
+    <p>Les données VMS, transmises en temps réel aux autorités et impossibles à couper par l'équipage, permettraient de se faire un avis plus précis. Elles restent toutefois hors de portée&nbsp;: le Centre national de surveillance des pêches (CNSP), qui les détient, n'a pas répondu aux sollicitations. L'Agence européenne de contrôle des pêches (EFCA) a indiqué posséder ces données mais ne pas être autorisée à les transmettre, celles-ci appartenant aux autorités françaises. </p>
+    <p>Les logbooks, ou journaux de pêche électroniques (ERS), dans lesquels les capitaines doivent légalement déclarer l'engin utilisé, la position et la profondeur de chaque trait de chalut ainsi que les captures et rejets par espèce, sont eux aussi détenus par le CNSP et inaccessibles au public.</p>  </div>
+
+  <h2>Les contrôles officiels</h2>
+  <p>Le Centre national de surveillance des pêches (CNSP), coordonne les patrouilles en mer avec les unités littorales des affaires maritimes, la gendarmerie maritime, la douane et la marine nationale. En 2024 ils annoncent&nbsp;:</p>
+  <div class="controls-grid">
+    <div class="control-stat">
+      <div class="n">439 contrôles en mer</div>
+      <div class="d">51 infractions relevées (11,6&nbsp;%)</div>
+    </div>
+    <div class="control-stat">
+      <div class="n">346 contrôles à terre</div>
+      <div class="d">28 infractions relevées (8,1&nbsp;%)</div>
+    </div>
+  </div>
+  <p style="margin-top:18px;">Les données publiques ne précisent pas combien de ces contrôles ont eu lieu spécifiquement dans le golfe du Lion pendant leur période de fermeture.</p>
+
+  <h2>Ce que ces données ne permettent pas d'établir</h2>
+  <ul>
+    <li>Les données AIS de Global Fishing Watch combinent plusieurs sources, chacune avec ses propres limites de précision et de couverture.</li>
+    <li>L'analyse repose sur des indices de comportement, la vitesse et la trajectoire, et non sur une observation directe de l'activité de pêche.</li>
+    <li>Les données VMS et les logbooks, seuls éléments permettant de trancher avec certitude entre chalutage pélagique et démersal, restent inaccessibles au public.</li>
+  </ul>
+  <p><strong>Droit de réponse&nbsp;:</strong> aucun des navires mentionnés n'a été contacté à ce stade.</p>
+
+  <h2>Glossaire</h2>
+  <dl class="glossary">
+    <dt>AIS</dt>
+    <dd>Obligatoire depuis 2014 pour tout navire de pêche français de plus de 15 mètres. Diffuse position, vitesse, direction. Peut être coupé manuellement par l'équipage.</dd>
+    <dt>VMS</dt>
+    <dd>Système satellite réglementaire, transmis directement aux autorités. Ne peut pas être désactivé. Données non publiques.</dd>
+    <dt>Satellites optiques (Sentinel-2)</dt>
+    <dd>Résolution d'environ 10 mètres par pixel. Repassage théorique 2 à 3 fois par semaine sur une même zone ; en pratique moins souvent, en raison de la couverture nuageuse.</dd>
+  </dl>
+
+  <div class="cta-wrap">
+    <p>Chaque événement cité ici est localisable et daté.</p>
+    <a class="cta-btn" href="#map-section">Explorer la carte interactive ↓</a>
+  </div>
+
+</main>
+
+<footer>
+  Méthodologie et données complètes disponibles sur <a href="https://github.com/levysimon/surveillance-chalutage-fra" target="_blank" rel="noopener noreferrer">GitHub</a>
+</footer>
+
+
+
+<section id="map-section">
+
+  <div id="map-section-header">
+    <div class="msh-inner">
+      <span class="msh-label">Carte interactive</span>
+      <a class="msh-back" href="#top">↑ Retour à l'article</a>
+    </div>
+  </div>
+
+
+<div id="app">
+
+  <div id="sidebar">
+    <div id="sidebar-header">
+      <h1>Chalutage — Golfe du Lion</h1>
+      <p>Zones à accès réglementé (FRA) &amp; traces AIS des événements de pêche suspectés à l'intérieur, pendant la fermeture saisonnière.</p>
+    </div>
+
+    <div class="section">
+      <h2>Zones</h2>
+      <div class="zone-item"><span class="swatch" style="background:rgba(192,57,43,0.35);border:1.5px solid #c0392b;"></span>
+        <div>FRA CGPM EST <small>2 537,7 km² · fermeture 1 nov.–30 avril</small></div>
+      </div>
+      <div class="zone-item"><span class="swatch" style="background:rgba(58,160,160,0.30);border:1.5px solid #3aa0a0;"></span>
+        <div>FRA CGPM OUEST <small> 2 716,7 km² · fermeture 1 nov.–30 juin</small></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Chalutiers</h2>
+      <div id="otb-toggle-row" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+        <div>
+          <div style="font-size:13px;font-weight:600;">OTB uniquement</div>
+          <div style="font-size:11px;color:#8ba0af;margin-top:2px;">Chalut de fond — registre de flotte</div>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="otb-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="btn-list" id="vessel-buttons"></div>
+    </div>
+
+    <div class="section">
+      <h2>Saison de pêche</h2>
+      <div class="btn-list" id="season-buttons"></div>
+    </div>
+
+    <div class="section">
+      <div id="img-toggle-row">
+        <div>
+          <div style="font-size:13px;font-weight:600;">Mode images</div>
+          <div style="font-size:11px;color:#8ba0af;margin-top:2px;">Afficher les prises de vue géolocalisées</div>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="img-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div id="legend-note">
+      <b>Comment lire les points :</b> chaque point est un relevé AIS. La flèche indique le cap, la couleur du navire distingue les traces, et l'échelle des marqueurs varie avec la vitesse. Cliquer sur un point affiche l'heure UTC, la vitesse et le cap exacts.
+      <br><br>
+      <b>Données :</b> zones chargées depuis <code>data_zones.geojson</code>. Traces AIS chargées à la demande depuis <code>data/navires/*.json</code> (un fichier par navire/saison, généré par <code>generate_navires_data.py</code>), pour éviter de tout télécharger d'un coup. Tout doit être servi via un serveur HTTP.
+    </div>
+  </div>
+
+  <div id="map-wrap">
+    <div id="map"></div>
+    <div id="top-strip">
+      <div id="title-chip">FRA GOLFE DU LION · <b id="current-filter">TOUS LES NAVIRES · TOUTES SAISONS</b></div>
+      <div id="scale-note">Fond de carte : OpenStreetMap<br>Zones : FRA CGPM (arrêtés 2018/2019)</div>
+    </div>
+  </div>
+
+</div>
+
+
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+// ============================================================
+// CHARGEMENT DYNAMIQUE DES DONNÉES
+// ------------------------------------------------------------
+// - data_zones.geojson          : polygones des zones FRA (CGPM EST / OUEST)
+// - data/data_navires_index.json : métadonnées légères (navires, couleurs,
+//                                   saisons, nb de points) — généré par
+//                                   generate_navires_data.py
+// - data/navires/<NAVIRE>__<SAISON>.json : traces AIS, chargées à la demande
+//                                   uniquement pour le(s) filtre(s) actif(s)
+// ============================================================
+// 1. Convertit "20220117T104401" en timestamp Unix (ms UTC)
+function parseImageTimestamp(str) {
+  const y = parseInt(str.substr(0, 4), 10);
+  const m = parseInt(str.substr(4, 2), 10) - 1;
+  const d = parseInt(str.substr(6, 2), 10);
+  const hh = parseInt(str.substr(9, 2), 10);
+  const mm = parseInt(str.substr(11, 2), 10);
+  const ss = parseInt(str.substr(13, 2), 10);
+  return Date.UTC(y, m, d, hh, mm, ss);
+}
+
+// 2. Extrait les informations du nom de fichier
+function parseImageFilename(filename) {
+  const match = filename.match(/^(.+?)_evt_(\d+)_(\d{8}T\d{6})\.png$/i);
+  if (!match) return null;
+
+  return {
+    filename: filename,
+    vesselNormalized: match[1].replace(/[-_]/g, ' ').toUpperCase().trim(),
+    eventId: match[2],
+    timestamp: parseImageTimestamp(match[3])
+  };
+}
+
+// 3. Interpolation de la position lat/lon
+function interpolatePosition(points, targetTimeMs) {
+  if (!points || points.length === 0) return null;
+
+  // Tri chrono des points
+  const sorted = points.slice().sort((a, b) => {
+    const tA = new Date(a.timestamp || a.time || a.t).getTime();
+    const tB = new Date(b.timestamp || b.time || b.t).getTime();
+    return tA - tB;
+  });
+
+  let pBefore = null;
+  let pAfter = null;
+
+  for (let i = 0; i < sorted.length; i++) {
+    const t = new Date(sorted[i].timestamp || sorted[i].time || sorted[i].t).getTime();
+    if (t <= targetTimeMs) pBefore = sorted[i];
+    if (t >= targetTimeMs && !pAfter) {
+      pAfter = sorted[i];
+      break;
+    }
+  }
+
+  if (pBefore && !pAfter) return { lat: pBefore.lat, lon: pBefore.lon };
+  if (!pBefore && pAfter) return { lat: pAfter.lat, lon: pAfter.lon };
+  if (!pBefore && !pAfter) return null;
+
+  const t1 = new Date(pBefore.timestamp || pBefore.time || pBefore.t).getTime();
+  const t2 = new Date(pAfter.timestamp || pAfter.time || pAfter.t).getTime();
+
+  if (t1 === t2) return { lat: pBefore.lat, lon: pBefore.lon };
+
+  const alpha = (targetTimeMs - t1) / (t2 - t1);
+  return {
+    lat: pBefore.lat + alpha * (pAfter.lat - pBefore.lat),
+    lon: pBefore.lon + alpha * (pAfter.lon - pBefore.lon)
+  };
+}
+
+const ZONES_URL = 'data_zones.geojson';
+const INDEX_URL = 'data/data_navires_index.json';
+const OTB_URL = 'data/flotte_otb.json';
+
+let ZONES_GEOJSON = null;
+// vesselsData : {navire: {color, seasons: {saison: nbPoints}}} — métadonnées seules
+let vesselsData = {};
+// Cache des points réellement chargés : clé "NAVIRE__SAISON" -> tableau de points
+const pointsCache = new Map();
+// Nombre max de flèches de direction affichées simultanément (perf DOM)
+const MAX_ARROW_MARKERS = 1000;
+
+function slugify(name){
+  return name.normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-zA-Z0-9]+/g, '_').replace(/^_+|_+$/g, '').toUpperCase();
+}
+
+async function getSeasonPoints(vesselName, season){
+  const key = vesselName + "__" + season;
+  if(pointsCache.has(key)) return pointsCache.get(key);
+  
+  const v = vesselsData[vesselName];
+  let url = v?.files?.[season];
+
+  if (!url) {
+    url = 'data/navires/' + slugify(vesselName) + '__' + season + '.json';
+  }
+
+  const points = await loadJSON(url);
+  pointsCache.set(key, points);
+  return points;
+}
+
+
+// EXEMPLE d'images géolocalisées — À REMPLACER.
+// Structure : [ {lat, lon, vessel, caption, url}, ... ] — url = lien vers l'image (Sentinel-2, photo, etc.)
+const SAMPLE_IMAGES = [{"lat": 42.775, "lon": 3.54, "vessel": "JULIARTH II", "caption": "Exemple — remplacer par une image Sentinel-2 / photo terrain réelle", "url": ""}, {"lat": 42.695, "lon": 3.345, "vessel": "LOUIS ELIE II", "caption": "Exemple — remplacer par une image réelle", "url": ""}];
+
+async function loadJSON(url){
+  const response = await fetch(url);
+  if(!response.ok){
+    throw new Error(`Erreur HTTP ${response.status} en chargeant ${url}`);
+  }
+  return response.json();
+}
+
+// ============================================================
+// CARTE (créée tout de suite, remplie après chargement des données)
+// ============================================================
+const map = L.map('map', { zoomControl:true, minZoom:6, preferCanvas:true }).setView([42.85, 3.75], 10);
+
+L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  maxZoom: 19
+}).addTo(map);
+
+const zoneStyles = {
+  "FRA CGPM EST": { color:"#540b0e", weight:2, fillColor:"#540b0e", fillOpacity:0.15 },
+  "FRA CGPM OUEST": { color:"#540b0e", weight:1.6, fillColor:"#540b0e", fillOpacity:0.15 }
+};
+
+let zoneLayer = null;
+let trackLayerGroup = L.layerGroup().addTo(map);
+let imageLayerGroup = L.layerGroup().addTo(map);
+
+function renderZones(geojson){
+  zoneLayer = L.geoJSON(geojson, {
+    style: function(feature){
+      const nom = feature.properties.nom;
+      return zoneStyles[nom] || { color:"#c98a3a", weight:2, fillOpacity:0.00 };
+    },
+    onEachFeature: function(feature, layer){
+      const p = feature.properties;
+      let info = "<div class='popup-title'>" + p.nom + "</div>";
+      info += "<div class='popup-row'><span>Surface</span><b>" + p.area_km2 + " km²</b></div>";
+      layer.bindPopup(info);
+    }
+  }).addTo(map);
+
+  try{ map.fitBounds(zoneLayer.getBounds(), {padding:[30,30]}); }catch(e){}
+}
+
+// ============================================================
+// ÉTAT / FILTRES
+// ============================================================
+let currentVessel = "ALL";
+// Par défaut on ne sélectionne PAS "Toutes saisons" : avec des centaines de
+// couples navire/saison, ce filtre déclencherait des centaines de requêtes
+// dès l'ouverture de la page. On démarre sur la saison la plus récente ;
+// l'utilisateur peut toujours choisir "Toutes saisons" volontairement.
+let currentSeason = "ALL";
+let showImages = false;
+// Filtre "OTB uniquement" : restreint aux navires du registre de flotte
+// équipés d'un chalut de fond (engin OTB) — data/flotte_otb.json,
+// généré par generate_flotte_otb.py. Si ce fichier est absent, le
+// toggle reste utilisable mais n'affichera aucun résultat (message explicite).
+let otbOnly = false;
+let OTB_NAMES = new Set(); // noms normalisés (voir normaliseNom)
+
+function normaliseNom(nom){
+  return nom.replace(/[-_]+/g, ' ').trim().toUpperCase();
+}
+
+function visibleVesselNames(){
+  if(!otbOnly) return allVesselNames;
+  return allVesselNames.filter(name => OTB_NAMES.has(normaliseNom(name)));
+}
+
+let allVesselNames = [];
+let allSeasons = [];
+
+// ============================================================
+// UI — BOUTONS NAVIRES
+// ============================================================
+const vesselButtonsEl = document.getElementById('vessel-buttons');
+
+function renderVesselButtons(){
+  vesselButtonsEl.innerHTML = "";
+  const allBtn = document.createElement('div');
+  allBtn.className = "btn all" + (currentVessel === "ALL" ? " active" : "");
+  allBtn.textContent = "Tous les navires";
+  allBtn.onclick = () => { currentVessel = "ALL"; refresh(); };
+  vesselButtonsEl.appendChild(allBtn);
+
+  const names = visibleVesselNames();
+
+  if(otbOnly && names.length === 0){
+    const empty = document.createElement('div');
+    empty.style.cssText = "font-size:12px;color:#8ba0af;padding:8px 2px;line-height:1.5;";
+    empty.textContent = OTB_NAMES.size
+      ? "Aucun navire de la carte ne correspond au registre OTB chargé."
+      : "Registre OTB introuvable (data/flotte_otb.json) — voir console F12.";
+    vesselButtonsEl.appendChild(empty);
+  }
+
+  // Si le navire actuellement sélectionné disparaît du filtre OTB, on revient à "Tous"
+  if(currentVessel !== "ALL" && !names.includes(currentVessel)){
+    currentVessel = "ALL";
+  }
+
+  names.forEach(name => {
+    const v = vesselsData[name];
+    
+    // Si une saison précise est sélectionnée, on prend le nb d'événements de cette saison,
+    // sinon on additionne toutes les saisons actives
+    const totalEvents = currentSeason === "ALL"
+      ? Object.values(v.seasons).reduce((a, b) => a + b, 0)
+      : (v.seasons[currentSeason] || 0);
+
+    const btn = document.createElement('div');
+    btn.className = "btn" + (currentVessel === name ? " active" : "");
+    
+    const labelEvt = totalEvents > 1 ? " évts" : " evt";
+    btn.innerHTML = "<span style='display:flex;align-items:center;gap:9px;'><span class='dot' style='background:" + v.color + "'></span>" + name + "</span><span class='count'>" + totalEvents + labelEvt + "</span>";
+    
+    btn.onclick = () => { currentVessel = name; refresh(); };
+    vesselButtonsEl.appendChild(btn);
+  });
+}
+
+// ============================================================
+// UI — BOUTONS SAISONS
+// ============================================================
+const seasonButtonsEl = document.getElementById('season-buttons');
+
+function renderSeasonButtons(){
+  seasonButtonsEl.innerHTML = "";
+  const allBtn = document.createElement('div');
+  allBtn.className = "btn all" + (currentSeason === "ALL" ? " active" : "");
+  allBtn.textContent = "Toutes les saisons";
+  allBtn.onclick = () => { currentSeason = "ALL"; refresh(); };
+  seasonButtonsEl.appendChild(allBtn);
+
+  allSeasons.forEach(season => {
+    const btn = document.createElement('div');
+    btn.className = "btn" + (currentSeason === season ? " active" : "");
+    btn.innerHTML = "<span>" + season + "</span>";
+    btn.onclick = () => { currentSeason = season; refresh(); };
+    seasonButtonsEl.appendChild(btn);
+  });
+}
+
+// ============================================================
+// RENDU DES TRACES
+// ============================================================
+
+
+function arrowIcon(color, heading, speed){
+  const size = 10 + Math.min(speed, 12) * 1.1;
+  const svg = `
+    <svg class="vessel-arrow" width="${size}" height="${size}" viewBox="0 0 24 24"
+         style="transform:rotate(${heading}deg);">
+      <path d="M12 1 L20 20 L12 15.5 L4 20 Z" fill="${color}" stroke="#0e1b26" stroke-width="1.1"/>
+    </svg>`;
+  return L.divIcon({
+    html: svg,
+    className: '',
+    iconSize: [size, size],
+    iconAnchor: [size/2, size/2]
+  });
+}
+
+// Normalise la lecture des propriétés du point AIS (gère les différents noms possibles)
+function getPointData(pt) {
+  const time = pt.t ?? pt.timestamp ?? pt.time ?? pt.date ?? pt.datetime;
+  const speed = Number(pt.speed ?? pt.sog ?? pt.vitesse ?? pt.spd ?? 0);
+  const heading = Number(pt.heading ?? pt.cog ?? pt.course ?? pt.cap ?? pt.bearing ?? 0);
+  const isEvent = Boolean(pt.event ?? pt.infraction ?? pt.is_event);
+  const lat = pt.lat ?? pt.latitude;
+  const lon = pt.lon ?? pt.lng ?? pt.longitude;
+  
+  // Récupération de la profondeur avec gestion des déclinaisons courantes
+  const rawDepth = pt.depth ?? pt.profondeur ?? pt.bathy ?? pt.depth_m ?? pt.elevation ?? null;
+  const depth = rawDepth !== null && !isNaN(Number(rawDepth)) ? Number(rawDepth) : null;
+
+  return { time, speed, heading, isEvent, lat, lon, depth };
+}
+
+function fmtDate(rawTime){
+  if (!rawTime) return "Heure inconnue";
+  // Convertit en ms si c'est un timestamp Unix en secondes
+  let d = new Date(typeof rawTime === 'number' && rawTime < 1e11 ? rawTime * 1000 : rawTime);
+  if (isNaN(d.getTime())) return "Heure invalide";
+
+  const pad = n => String(n).padStart(2,'0');
+  return pad(d.getUTCDate()) + "/" + pad(d.getUTCMonth()+1) + "/" + d.getUTCFullYear() + " " + pad(d.getUTCHours()) + ":" + pad(d.getUTCMinutes()) + " UTC";
+}
+
+function pointPopup(vesselName, color, pt){
+  const { time, speed, heading, depth } = getPointData(pt);
+  
+  let html = "<div class='popup-title' style='color:" + color + "'>" + vesselName + "</div>";
+  html += "<div class='popup-row'><span>Heure</span><b>" + fmtDate(time) + "</b></div>";
+  html += "<div class='popup-row'><span>Vitesse</span><b>" + (isNaN(speed) ? "0.0" : speed.toFixed(1)) + " nds</b></div>";
+  html += "<div class='popup-row'><span>Cap</span><b>" + (isNaN(heading) ? "0" : Math.round(heading)) + "°</b></div>";
+  
+  // Affichage de la profondeur (convertit en valeur positive si elle était négative dans les données)
+  const depthStr = depth !== null ? Math.abs(Math.round(depth)) + " m" : "N/A";
+  html += "<div class='popup-row'><span>Profondeur</span><b>" + depthStr + "</b></div>";
+  
+  return html;
+}
+
+// Jeton de requête pour ignorer un chargement devenu obsolète si l'utilisateur
+// change de filtre pendant le fetch (évite l'affichage de données périmées).
+let renderToken = 0;
+
+async function renderTracks(){
+  const myToken = ++renderToken;
+  trackLayerGroup.clearLayers();
+
+  const vesselsToShow = currentVessel === "ALL" ? visibleVesselNames() : [currentVessel];
+
+  // Construit la liste des (navire, saison) à charger
+  const toLoad = [];
+  vesselsToShow.forEach(name => {
+    const v = vesselsData[name];
+    if(!v) return;
+    const seasonsToShow = currentSeason === "ALL" ? Object.keys(v.seasons) : [currentSeason];
+    seasonsToShow.forEach(season => {
+      if(v.seasons[season]) toLoad.push({ name, season, color: v.color });
+    });
+  });
+
+  const filterEl = document.getElementById('current-filter');
+  filterEl.dataset.loading = "1";
+  filterEl.dataset.pending = String(toLoad.length);
+
+  const failed = [];
+  let loadedCount = 0;
+  let drawnPtsTotal = 0;
+
+  // Concurrence limitée : évite de tirer des centaines de requêtes en même
+  // temps (cas "Tous les navires · Toutes saisons") tout en dessinant
+  // CHAQUE trace dès qu'elle arrive, au lieu d'attendre que tout soit fini.
+  const CONCURRENCY = 6;
+  let cursor = 0;
+
+  async function worker(){
+    while(cursor < toLoad.length){
+      const item = toLoad[cursor++];
+      if(myToken !== renderToken) return; // filtre changé entre-temps : on arrête
+
+      const v = vesselsData[item.name];
+      const url = v?.files?.[item.season] || ('data/navires/' + slugify(item.name) + '__' + item.season + '.json');
+      let pts = [];
+      try{
+        pts = await getSeasonPoints(item.name, item.season);
+      }catch(e){
+        console.error("Échec de chargement :", url, e);
+        failed.push(url);
+      }
+
+      if(myToken !== renderToken) return; // filtre changé pendant le fetch
+
+      loadedCount++;
+      drawnPtsTotal += pts.length;
+      filterEl.dataset.pending = String(toLoad.length - loadedCount);
+
+      if(!pts.length) continue;
+
+      // Ligne de trajectoire
+      const latlngs = pts.map(p => {
+        const data = getPointData(p);
+        return [data.lat, data.lon];
+      }).filter(coords => coords[0] != null && coords[1] != null);
+
+      if(latlngs.length > 1){
+        L.polyline(latlngs, {
+          color: item.color, weight: 2.0, opacity: 0.5, dashArray: "1 6", lineCap: "round"
+        }).addTo(trackLayerGroup);
+      }
+
+      // Flèches de direction
+      const sampleStep = Math.max(1, Math.ceil(drawnPtsTotal / MAX_ARROW_MARKERS));
+      pts.forEach((pt, i) => {
+        const data = getPointData(pt);
+        if(!(data.isEvent || i % sampleStep === 0)) return;
+        if(data.lat == null || data.lon == null) return;
+
+        const marker = L.marker([data.lat, data.lon], { 
+          icon: arrowIcon(item.color, data.heading, data.speed) 
+        });
+        marker.bindPopup(pointPopup(item.name, item.color, pt));
+        marker.addTo(trackLayerGroup);
+      });
+    }
+  }
+
+  await Promise.all(Array.from({ length: Math.min(CONCURRENCY, toLoad.length) }, worker));
+
+  if(myToken !== renderToken) return;
+
+  delete filterEl.dataset.loading;
+  delete filterEl.dataset.pending;
+
+  if(failed.length){
+    const banner = document.createElement('div');
+    banner.style.cssText = "position:absolute;bottom:14px;left:14px;right:14px;z-index:1000;background:rgba(192,57,43,0.92);color:#fff;padding:10px 14px;border-radius:8px;font-family:var(--mono);font-size:11px;max-height:120px;overflow-y:auto;";
+    banner.innerHTML = "<b>" + failed.length + " fichier(s) de trace introuvable(s)</b> — vérifiez le dossier <code>data/navires/</code> (voir console F12 pour le détail) :<br>" + failed.slice(0,5).map(u => "· " + u).join("<br>");
+    document.getElementById('map-wrap').appendChild(banner);
+    setTimeout(() => banner.remove(), 8000);
+  }
+}
+
+// ============================================================
+// RENDU DES IMAGES
+// ============================================================
+async function renderImages(){
+  imageLayerGroup.clearLayers();
+  if(!showImages) return;
+
+  try {
+    // Index structuré : chaque entrée déclare explicitement son bateau et sa saison
+    // (généré par generate_images_index.py — plus de devinette par nom de fichier ici).
+    const imageEntries = await loadJSON('data/images/index.json');
+
+    for (const entry of imageEntries) {
+      // Rétrocompatibilité : si l'index est encore une simple liste de noms de
+      // fichiers (ancien format), on retombe sur l'ancien parsing par regex.
+      const isLegacy = typeof entry === 'string';
+      const filename = isLegacy ? entry : entry.filename;
+      const legacyMeta = isLegacy ? parseImageFilename(filename) : null;
+      if (isLegacy && !legacyMeta) continue;
+
+      const vesselKey = isLegacy
+        ? allVesselNames.find(name => name.replace(/[-_]/g, ' ').toUpperCase().trim() === legacyMeta.vesselNormalized)
+        : (vesselsData[entry.bateau] ? entry.bateau : null);
+
+      if (!vesselKey) {
+        console.warn(`Image ignorée (bateau introuvable dans les données chargées) : ${filename}`);
+        continue;
+      }
+
+      // Filtre selon le navire actuellement sélectionné dans l'UI
+      if (currentVessel !== "ALL" && currentVessel !== vesselKey) continue;
+
+      const season = isLegacy
+        ? (() => {
+            const d = new Date(legacyMeta.timestamp);
+            const y = d.getUTCFullYear(), m = d.getUTCMonth() + 1;
+            const sy = m >= 11 ? y : y - 1;
+            return `${sy}-${sy + 1}`;
+          })()
+        : entry.saison;
+
+      // Filtre selon la saison actuellement sélectionnée dans l'UI
+      if (currentSeason !== "ALL" && currentSeason !== season) continue;
+
+      const timestampMs = isLegacy ? legacyMeta.timestamp : new Date(entry.timestamp).getTime();
+      const eventId = isLegacy ? legacyMeta.eventId : entry.event_id;
+
+      // Charge les points AIS du couple (bateau, saison) explicitement désigné
+      let pts = [];
+      try {
+        pts = await getSeasonPoints(vesselKey, season);
+      } catch (e) {
+        console.warn(`Image ignorée (pas de trace pour ${vesselKey} / ${season}) : ${filename}`);
+        continue;
+      }
+
+      // Si l'event_id de la photo se retrouve dans les points de la saison, on
+      // restreint l'interpolation à ce seul événement (position bien plus fiable
+      // que d'interpoler sur toute la saison si le bateau a eu plusieurs sorties).
+      let ptsPourInterpolation = pts;
+      if (eventId != null) {
+        const ptsEvent = pts.filter(p => {
+          const id = p.event_id_unique ?? p.event_id ?? p.eventId;
+          return id != null && String(id).toLowerCase().endsWith(`_evt_${String(eventId).toLowerCase()}`);
+        });
+        if (ptsEvent.length > 0) ptsPourInterpolation = ptsEvent;
+      }
+
+      // Interpolation de la position lat/lon à l'heure exacte de la photo
+      const pos = interpolatePosition(ptsPourInterpolation, timestampMs);
+      if (!pos) continue;
+
+      // Création du marqueur Leaflet
+      const icon = L.divIcon({
+        html: "<div class='cam-marker'>📷</div>",
+        className: '',
+        iconSize: [26,26],
+        iconAnchor: [13,13]
+      });
+
+      const marker = L.marker([pos.lat, pos.lon], { icon: icon, zIndexOffset: 1000 });
+
+      const imgUrl = `data/images/${filename}`;
+      let html = `<div class='popup-title'>${vesselKey}</div>`;
+      html += `<div class='popup-row'><span>Saison</span><b>${season}</b></div>`;
+      html += `<div class='popup-row'><span>Passage satellite</span><b>${fmtDate(timestampMs)}</b></div>`;
+      if(eventId != null) html += `<div class='popup-row'><span>Événement</span><b>#${eventId}</b></div>`;
+      html += `<a href='${imgUrl}' target='_blank'><img class='popup-img' src='${imgUrl}' style='max-width:100%; height:auto; margin-top:8px; border-radius:4px;'></a>`;
+
+      marker.bindPopup(html);
+      marker.addTo(imageLayerGroup);
+    }
+  } catch (err) {
+    console.error("Erreur lors du chargement des images satellites :", err);
+  }
+}
+
+// ============================================================
+// RAFRAÎCHISSEMENT GLOBAL
+// ============================================================
+function refresh(){
+  renderVesselButtons();
+  renderSeasonButtons();
+  renderTracks();
+  renderImages();
+
+  const label = (currentVessel === "ALL" ? "TOUS LES NAVIRES" : currentVessel.toUpperCase())
+    + " · " + (currentSeason === "ALL" ? "TOUTES SAISONS" : currentSeason);
+  document.getElementById('current-filter').textContent = label;
+}
+
+document.getElementById('img-toggle').addEventListener('change', (e) => {
+  showImages = e.target.checked;
+  renderImages();
+});
+
+document.getElementById('otb-toggle').addEventListener('change', (e) => {
+  otbOnly = e.target.checked;
+  refresh();
+});
+
+// ============================================================
+// INITIALISATION — chargement dynamique puis premier rendu
+// ============================================================
+// Palette de couleurs attribuées automatiquement aux navires
+// Extrait le nom du fichier et garantit le chemin 'data/navires/<fichier>.json'
+function getCleanFilePath(rawPath) {
+  if (!rawPath) return '';
+  const filename = rawPath.split('/').pop();
+  return 'data/navires/' + filename;
+}
+
+const PALETTE = [
+  "#3498db", // Bleu vif
+  "#e74c3c", // Rouge
+  "#2ecc71", // Vert
+  "#f1c40f", // Jaune
+  "#9b59b6", // Violet
+  "#e67e22", // Orange
+  "#1abc9c", // Turquoise
+  "#e84393", // Rose
+  "#00cec9", // Cyan
+  "#fdcb6e"  // Ambre
+];
+
+async function init(){
+  vesselButtonsEl.innerHTML = "<div style='color:#8ba0af;font-size:12.5px;'>Chargement des traces…</div>";
+  seasonButtonsEl.innerHTML = "";
+
+  try {
+    const [zones, index] = await Promise.all([
+      loadJSON(ZONES_URL),
+      loadJSON(INDEX_URL)
+    ]);
+
+    // Chargement du registre OTB séparément : optionnel, ne doit jamais
+    // bloquer l'affichage de la carte s'il est absent ou mal formé.
+    try {
+      const otbList = await loadJSON(OTB_URL);
+      OTB_NAMES = new Set((otbList || []).map(e => normaliseNom(e.nom_normalise || e.nom)));
+      console.log(`Registre OTB chargé : ${OTB_NAMES.size} navire(s).`);
+    } catch (e) {
+      console.warn(`Registre OTB introuvable (${OTB_URL}) — le filtre "OTB uniquement" sera vide.`, e);
+      OTB_NAMES = new Set();
+    }
+
+    ZONES_GEOJSON = zones;
+    renderZones(ZONES_GEOJSON);
+
+    vesselsData = {};
+    if (index && Array.isArray(index.fichiers)) {
+      let colorIdx = 0;
+      index.fichiers.forEach(item => {
+        // 1. Filtre les catégories hors-fermeture
+        if (!item.saison || item.saison.includes('hors-fermeture')) return;
+
+        // 2. Conserve à partir de la saison 2020-2021
+        const startYear = parseInt(item.saison.split('-')[0], 10);
+        if (isNaN(startYear) || startYear < 2020) return;
+
+        const name = item.bateau;
+        if (!vesselsData[name]) {
+          vesselsData[name] = {
+            color: PALETTE[colorIdx % PALETTE.length],
+            seasons: {},
+            files: {}
+          };
+          colorIdx++;
+        }
+        
+        // Stocke le NOMBRE D'ÉVÉNEMENTS au lieu du nombre de points
+        vesselsData[name].seasons[item.saison] = item.nb_evenements ?? item.nb_evenements_infraction_confirmee ?? 0;
+        vesselsData[name].files[item.saison] = getCleanFilePath(item.fichier);
+      });
+    }
+
+    allVesselNames = Object.keys(vesselsData)
+      .sort((a, b) => {
+        const totalEventsB = Object.values(vesselsData[b].seasons).reduce((x, y) => x + y, 0);
+        const totalEventsA = Object.values(vesselsData[a].seasons).reduce((x, y) => x + y, 0);
+        return totalEventsB - totalEventsA; // Trie les navires par nombre d'événements décroissant
+      });
+      
+    allSeasons = [...new Set(allVesselNames.flatMap(v => Object.keys(vesselsData[v].seasons)))].sort();
+
+    if(allSeasons.length){
+      currentSeason = allSeasons[allSeasons.length - 1];
+    }
+
+    refresh();
+  } catch (error) {
+    console.error("Impossible de charger les données :", error);
+    vesselButtonsEl.innerHTML = "<div style='color:#c0392b;font-size:12.5px;'>Erreur de chargement des données (" + error.message + "). Vérifiez que data_zones.geojson et data/data_navires_index.json sont bien présents.</div>";
+  }
+}
+
+init();
+</script>
+</body>
+</html>

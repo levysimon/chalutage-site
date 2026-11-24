@@ -1,0 +1,189 @@
+[
+  {
+    "lat":42.5565033333,
+    "lon":3.3079283333,
+    "course":45.5999984741,
+    "speed":3.2999999523,
+    "timestamp":"2022-01-19T02:22:32.000Z",
+    "depth":-89.0,
+    "status":"pêche",
+    "event_id_unique":"DON BORJA_evt_912",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.5693966667,
+    "lon":3.3168983333,
+    "course":14.3999996185,
+    "speed":3.2000000477,
+    "timestamp":"2022-01-19T02:39:32.000Z",
+    "depth":-90.0,
+    "status":"pêche",
+    "event_id_unique":"DON BORJA_evt_912",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.6036083333,
+    "lon":3.3063066667,
+    "course":325.700012207,
+    "speed":3.5999999046,
+    "timestamp":"2022-01-19T03:21:20.000Z",
+    "depth":-89.0,
+    "status":"pêche",
+    "event_id_unique":"DON BORJA_evt_912",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.614785,
+    "lon":3.2934633333,
+    "course":323.3999938965,
+    "speed":3.2999999523,
+    "timestamp":"2022-01-19T03:38:19.000Z",
+    "depth":-90.0,
+    "status":"pêche",
+    "event_id_unique":"DON BORJA_evt_912",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.6272283333,
+    "lon":3.2873566667,
+    "course":340.0,
+    "speed":3.4000000954,
+    "timestamp":"2022-01-19T03:53:38.000Z",
+    "depth":-90.0,
+    "status":"pêche",
+    "event_id_unique":"DON BORJA_evt_912",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.6415066667,
+    "lon":3.2847133333,
+    "course":342.1000061035,
+    "speed":3.5,
+    "timestamp":"2022-01-19T04:10:09.000Z",
+    "depth":-90.0,
+    "status":"pêche",
+    "event_id_unique":"DON BORJA_evt_912",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.6542466667,
+    "lon":3.27798,
+    "course":319.1000061035,
+    "speed":3.2999999523,
+    "timestamp":"2022-01-19T04:25:59.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"DON BORJA_evt_912",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.5876683333,
+    "lon":3.2804283333,
+    "course":28.2000007629,
+    "speed":2.5,
+    "timestamp":"2022-01-19T07:25:30.000Z",
+    "depth":-90.0,
+    "status":"pêche",
+    "event_id_unique":"DON BORJA_evt_912",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.601145,
+    "lon":3.2847816667,
+    "course":18.7999992371,
+    "speed":3.5,
+    "timestamp":"2022-01-19T07:41:30.000Z",
+    "depth":-90.0,
+    "status":"pêche",
+    "event_id_unique":"DON BORJA_evt_912",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.4351633333,
+    "lon":3.25235,
+    "course":283.799987793,
+    "speed":3.5,
+    "timestamp":"2022-04-05T09:16:30.000Z",
+    "depth":-96.0,
+    "status":"pêche",
+    "event_id_unique":"DON BORJA_evt_915",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.41808,
+    "lon":3.2467516667,
+    "course":183.0,
+    "speed":3.1,
+    "timestamp":"2022-04-05T10:21:05.000Z",
+    "depth":-97.0,
+    "status":"pêche",
+    "event_id_unique":"DON BORJA_evt_915",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.4299533333,
+    "lon":3.2529233333,
+    "course":117.6999969482,
+    "speed":3.2999999523,
+    "timestamp":"2022-04-05T13:26:13.000Z",
+    "depth":-97.0,
+    "status":"pêche",
+    "event_id_unique":"DON BORJA_evt_915",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.4197183333,
+    "lon":3.2459683333,
+    "course":234.3000030518,
+    "speed":6.0,
+    "timestamp":"2022-04-05T14:08:32.000Z",
+    "depth":-97.0,
+    "status":"pêche",
+    "event_id_unique":"DON BORJA_evt_915",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.4156316667,
+    "lon":3.2471583333,
+    "course":359.0,
+    "speed":2.4000000954,
+    "timestamp":"2022-04-06T08:51:30.000Z",
+    "depth":-97.0,
+    "status":"pêche",
+    "event_id_unique":"DON BORJA_evt_916",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.4164533333,
+    "lon":3.2440333333,
+    "course":0.3000000119,
+    "speed":2.9000000954,
+    "timestamp":"2022-04-06T12:42:19.000Z",
+    "depth":-94.0,
+    "status":"pêche",
+    "event_id_unique":"DON BORJA_evt_916",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.4294233333,
+    "lon":3.2422583333,
+    "course":349.3999938965,
+    "speed":3.0999999046,
+    "timestamp":"2022-04-06T12:57:41.000Z",
+    "depth":-94.0,
+    "status":"pêche",
+    "event_id_unique":"DON BORJA_evt_916",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":42.43264,
+    "lon":3.2249283333,
+    "course":230.0,
+    "speed":4.0,
+    "timestamp":"2022-04-06T13:13:20.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"DON BORJA_evt_916",
+    "zone_detection":"OUEST"
+  }
+]

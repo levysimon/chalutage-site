@@ -1,0 +1,101 @@
+[
+  {
+    "lat":43.1736066667,
+    "lon":3.7528,
+    "course":92.5999984741,
+    "speed":4.0999999046,
+    "timestamp":"2024-04-19T05:21:56.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"LAURA THALIA II_evt_1171",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.1786916667,
+    "lon":3.773435,
+    "course":55.0,
+    "speed":4.0,
+    "timestamp":"2024-04-19T05:36:17.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"LAURA THALIA II_evt_1171",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.20287,
+    "lon":3.819205,
+    "course":209.1999969482,
+    "speed":1.2000000477,
+    "timestamp":"2024-04-19T06:32:16.000Z",
+    "depth":-94.0,
+    "status":"pêche",
+    "event_id_unique":"LAURA THALIA II_evt_1171",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.199385,
+    "lon":3.8148833333,
+    "course":283.1000061035,
+    "speed":4.0,
+    "timestamp":"2024-04-19T06:47:55.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"LAURA THALIA II_evt_1171",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2254466667,
+    "lon":3.8435166667,
+    "course":51.2999992371,
+    "speed":4.1999998093,
+    "timestamp":"2024-04-19T07:32:15.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"LAURA THALIA II_evt_1171",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2365966667,
+    "lon":3.8633533333,
+    "course":54.2999992371,
+    "speed":4.1999998093,
+    "timestamp":"2024-04-19T07:47:55.000Z",
+    "depth":-90.0,
+    "status":"pêche",
+    "event_id_unique":"LAURA THALIA II_evt_1171",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2459233333,
+    "lon":3.8839666667,
+    "course":59.5999984741,
+    "speed":4.1999998093,
+    "timestamp":"2024-04-19T08:02:56.000Z",
+    "depth":-90.0,
+    "status":"pêche",
+    "event_id_unique":"LAURA THALIA II_evt_1171",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.252835,
+    "lon":3.9063616667,
+    "course":85.0,
+    "speed":4.3000001907,
+    "timestamp":"2024-04-19T08:18:15.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"LAURA THALIA II_evt_1171",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2529983333,
+    "lon":3.9240333333,
+    "course":270.299987793,
+    "speed":1.6000000238,
+    "timestamp":"2024-04-19T08:34:15.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"LAURA THALIA II_evt_1171",
+    "zone_detection":"OUEST"
+  }
+]

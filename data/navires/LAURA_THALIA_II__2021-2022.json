@@ -1,0 +1,90 @@
+[
+  {
+    "lat":43.1225283333,
+    "lon":3.6762766667,
+    "course":42.5,
+    "speed":4.3,
+    "timestamp":"2022-03-29T08:23:10.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"LAURA THALIA II_evt_814",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.1431316667,
+    "lon":3.70343,
+    "course":47.8,
+    "speed":4.3,
+    "timestamp":"2022-03-29T08:47:20.000Z",
+    "depth":-90.0,
+    "status":"pêche",
+    "event_id_unique":"LAURA THALIA II_evt_814",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.1697583333,
+    "lon":3.7429866667,
+    "course":49.9,
+    "speed":4.3,
+    "timestamp":"2022-03-29T09:20:20.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"LAURA THALIA II_evt_814",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.18208,
+    "lon":3.76354,
+    "course":47.9,
+    "speed":4.3,
+    "timestamp":"2022-03-29T09:36:40.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"LAURA THALIA II_evt_814",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.190215,
+    "lon":3.7752233333,
+    "course":51.3,
+    "speed":4.1,
+    "timestamp":"2022-03-29T09:46:39.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"LAURA THALIA II_evt_814",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2095733333,
+    "lon":3.8124133333,
+    "course":64.3,
+    "speed":0.9,
+    "timestamp":"2022-03-29T10:17:00.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"LAURA THALIA II_evt_814",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.20321,
+    "lon":3.8066233333,
+    "course":81.7,
+    "speed":6.2,
+    "timestamp":"2022-03-29T10:30:28.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"LAURA THALIA II_evt_814",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2078466667,
+    "lon":3.8141,
+    "course":44.3,
+    "speed":4.2,
+    "timestamp":"2022-03-29T10:35:00.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"LAURA THALIA II_evt_814",
+    "zone_detection":"OUEST"
+  }
+]

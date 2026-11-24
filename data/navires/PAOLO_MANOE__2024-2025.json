@@ -1,0 +1,79 @@
+[
+  {
+    "lat":43.1970616667,
+    "lon":3.7926616667,
+    "course":225.3999938965,
+    "speed":4.3000001907,
+    "timestamp":"2025-02-25T04:34:26.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"PAOLO MANOE_evt_1952",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.184445,
+    "lon":3.7754316667,
+    "course":228.0,
+    "speed":4.3000001907,
+    "timestamp":"2025-02-25T04:49:35.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"PAOLO MANOE_evt_1952",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.1274916667,
+    "lon":3.6815666667,
+    "course":232.6000061035,
+    "speed":4.5999999046,
+    "timestamp":"2025-02-25T06:00:56.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"PAOLO MANOE_evt_1952",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.1227483333,
+    "lon":3.6764683333,
+    "course":48.0,
+    "speed":4.3000001907,
+    "timestamp":"2025-02-25T09:38:21.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"PAOLO MANOE_evt_1952",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.1566266667,
+    "lon":3.7270383333,
+    "course":51.2000007629,
+    "speed":4.3000001907,
+    "timestamp":"2025-02-25T10:20:15.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"PAOLO MANOE_evt_1952",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.2022266667,
+    "lon":3.803835,
+    "course":52.5999984741,
+    "speed":4.3000001907,
+    "timestamp":"2025-02-25T11:20:25.000Z",
+    "depth":-92.0,
+    "status":"pêche",
+    "event_id_unique":"PAOLO MANOE_evt_1952",
+    "zone_detection":"OUEST"
+  },
+  {
+    "lat":43.20324,
+    "lon":3.7914283333,
+    "course":36.9000015259,
+    "speed":2.9000000954,
+    "timestamp":"2025-02-25T11:50:26.000Z",
+    "depth":-91.0,
+    "status":"pêche",
+    "event_id_unique":"PAOLO MANOE_evt_1952",
+    "zone_detection":"OUEST"
+  }
+]
